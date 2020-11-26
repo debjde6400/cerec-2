@@ -1,0 +1,27 @@
+import avl_tree
+
+myavl = avl_tree.avl_tree()
+myavl.insert_node((5,3))      #(5,3)
+myavl.insert_node((-3,1))      #(-3,1)
+myavl.insert_node((2,2))      #(2,2)
+myavl.insert_node((-10,8))
+myavl.insert_node((-1,7))
+myavl.insert_node((10,0))
+myavl.insert_node((-4,-1))
+myavl.insert_node((6,0))
+myavl.insert_node((5,7))
+
+#mybst.minimum_element(mybst.root)
+#mybst.maximum_element(mybst.root)
+myavl.preorder(myavl.root)
+print("\n*****")
+print()
+
+#myavl.preorder(myavl.root)
+print("\n*****")
+print()
+#myavl.delete_a_node((2,2))
+#mybst.preorder(mybst.root)
+myavl.preorder(myavl.root)
+print("\n*****")
+#print(mybst.height_BST(mybst.root))
