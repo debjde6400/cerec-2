@@ -1,0 +1,87 @@
+[
+	{
+		"sentence": "This Software Requirements Specification (SRS) establishes the functional, performance, and verification requirements for the XML Services (XS) functional area of the Defense Information Infrastructure (DII) Common Operating Environment (COE)."
+	},	{
+		"sentence": "The XS functional area includes Registration of terms (tags and structures), Design of XML schemas, Generation and Consumption of XML documents."
+	},	{
+		"sentence": "XML Services provide infrastructure services for mission and support applications using XML technology."
+	},	{
+		"sentence": "These services isolate vendor-unique implementations of data access and provide applications a means of avoiding dependencies on physical access models."
+	},	{
+		"sentence": "These services also provide data management functions for access to distributed (local and remote) database management systems as one of the solutions for interoperablity."
+	},	{
+		"sentence": "This document outlines the software capabilities required for the XS components for the DII COE."
+	},	{
+		"sentence": "Section 2 lists the documents that are applicable to this specification."
+	},	{
+		"sentence": "Section 3 provides a list of functional capabilities."
+	},	{
+		"sentence": "Section 4 identifies the qualification requirements."
+	},	{
+		"sentence": "Section 5 outlines the requirements and verification traceability matrix."
+	},	{
+		"sentence": "Section 6 contains the applicable notes associated with the XS component."
+	},	{
+		"sentence": "The XS shall deliver inter-related components as shown in figure 3.2-1."
+	},	{
+		"sentence": "The Registry shall provide standard APIs as specified in Appendix B."
+	},	{
+		"sentence": "The XS function shall provide standard APIs as specified in Appendix C."
+	},	{
+		"sentence": "The XS shall internally interface (transparent to the operator) with the existing data elements of the DBIF, DAC, and COTS RDBMS products."
+	},	{
+		"sentence": "The Registry software shall be portable and required to execute on COE-compliant platforms."
+	},	{
+		"sentence": "Personnel requirements shall be determined by the developers of the system in which the XS module is embedded."
+	},	{
+		"sentence": "Training requirements shall be determined by the developers of the system in which the XS module is embedded."
+	},	{
+		"sentence": "The XS developer is responsible for software maintenance, software support, and software updates."
+	},	{
+		"sentence": "The DISA Configuration Manager (CM) is responsible for distribution of the XS product to system developers."
+	},	{
+		"sentence": "The XS software shall be delivered in accordance with DII COE guidelines."
+	},	{
+		"sentence": "Provided under separate document."
+	},	{
+		"sentence": "Establishing a new Information Resource."
+	},	{
+		"sentence": "Follow these conventions for creating new information resources for the Registry."
+	},	{
+		"sentence": "If the term is well recognized outside its container term, designate it as an element."
+	},	{
+		"sentence": "Example: CTRY_CD, CTRY_NM, CTRY_ABBRD_NM, CTRY_OFF_NM, CTRY_SCP_NT_TX, and CTRY_PSTL_NM are all characteristics (ER-attributes) for the entity CTRY."
+	},	{
+		"sentence": "In the relational world, they are columns within the table ctry, attributes of the entity ctry in er-modeling, and member attributes in object modeling."
+	},	{
+		"sentence": "It would be expected that a submitter would identify them as attributes rather than elements."
+	},	{
+		"sentence": "But if they were identified as attributes of the element ctry, then the additional baggage (other attributes) must be carried, or submitted as separate elements.",
+		"causality": {
+			"cause": "they were identified as attributes of the element ctry",
+			"effect": "the additional baggage (other attributes) must be carried, or submitted as separate elements"
+		}
+	},	{
+		"sentence": "We wish to limit the proliferation of tags, so we strongly urge folks to use XML_Attributes sparingly."
+	},	{
+		"sentence": "Initially, the Registry will not have keyword, thesaurus, or ontology support but it will have a substring search for a number of fields, including definition."
+	},	{
+		"sentence": "Therefore, we urge submitters to include enough expressive terms so that COE developers would easily find the term they might consider 'natural' in the definition and find the desirable tag for expressing that concept."
+	},	{
+		"sentence": "Example: If the registered tag is ORG_ID, the description that includes references."
+	},	{
+		"sentence": "The External Interfaces for the XS SRS are defined as interfaces to non-COE components."
+	},	{
+		"sentence": "Detailed information (as specified in paragraph 3.3 of the Data Item Description DI-IPSC-81433) defining these interfaces will be specified during the design phase of the COE XS architecture."
+	},	{
+		"sentence": "At this time such detailed information is unavailable."
+	},	{
+		"sentence": "The Internal Interfaces for the XS SRS are defined as interfaces to COE components."
+	},	{
+		"sentence": "Detailed information (as specified in paragraph 3.4 of the Data Item Description DI-IPSC-81433) defining these interfaces will be specified during the design phase of the COE XS architecture."
+	},	{
+		"sentence": "At this time such detailed information is unavailable."
+	},	{
+		"sentence": "The COE components identified to-date are listed below."
+	}
+]

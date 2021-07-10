@@ -1,0 +1,481 @@
+[
+	{
+		"sentence": "Citizens can register their complaints with police and then based on the evidence, facts and following investigation, police shall take the complaint forward."
+	},	{
+		"sentence": "The Registration module acts as an interface between the police and citizens and it eases the approach, interaction and information exchange between police and complainants."
+	},	{
+		"sentence": "After a complaint is initiated, police initiates the investigation process.",
+		"causality": {
+			"cause": "a complaint is initiated",
+			"effect": "police initiates the investigation process"
+		}
+	},	{
+		"sentence": "The Investigation module of the CCTNS facilitates the investigation process and introduces operational efficiencies by automating most of the tasks that take place after initial entries are made during Registration.",
+		"causality": {
+			"cause": "automating most of the tasks that take place after initial entries are made during Registration",
+			"effect": "The Investigation module of the CCTNS facilitates the investigation process and introduces operational efficiencies"
+		}
+	},	{
+		"sentence": "Interfacing with the courts during the prosecution of cases is an integral part of the responsibilities of police personnel."
+	},	{
+		"sentence": "A designated constable from each police station constantly interfaces with the courts."
+	},	{
+		"sentence": "The Prosecution module of the CCTNS aids this interfacing by providing a platform to record entries of the court interactions.",
+		"causality": {
+			"cause": "providing a platform to record entries of the court interactions",
+			"effect": "The Prosecution module of the CCTNS aids this interfacing"
+		}
+	},	{
+		"sentence": "The Search module of the CCTNS gives police personnel the ability to execute a basic or advanced search on cases."
+	},	{
+		"sentence": "Using the search functionality, police personnel can search for a particular person, type of crime, modus operandi, property etc.",
+		"causality": {
+			"cause": "Using the search functionality",
+			"effect": "police personnel can search for a particular person, type of crime, modus operandi, property etc."
+		}
+	},	{
+		"sentence": "It also gives the user the ability to customize the results view by criminal/accused or by cases."
+	},	{
+		"sentence": "It makes reporting easy for police by enabling them to execute different types of queries such as monthly reporting, RTI related and other.",
+		"causality": {
+			"cause": "enabling them to execute different types of queries such as monthly reporting, RTI related and other",
+			"effect": "It makes reporting easy for police"
+		}
+	},	{
+		"sentence": "The Citizen Interface module of the CCTNS acts as a conduit for the information exchange between citizens and police units/personnel."
+	},	{
+		"sentence": "Citizens can use it as a tool to get information or acknowledgements from police."
+	},	{
+		"sentence": "The police in turn can use it to respond to citizens with very little turnaround time."
+	},	{
+		"sentence": "It improves overall productivity by helping citizens and police to cut short the drudgery of large amounts of paperwork.",
+		"causality": {
+			"cause": "helping citizens and police to cut short the drudgery of large amounts of paperwork",
+			"effect": "It improves overall productivity"
+		}
+	},	{
+		"sentence": "The Navigation module of the CCTNS provides role based landing pages which help in navigating through the CCTNS application.",
+		"causality": {
+			"cause": "The Navigation module of the CCTNS provides role based landing pages",
+			"effect": "help in navigating through the CCTNS application"
+		}
+	},	{
+		"sentence": "It shows information such as cases assigned, alerts, pending tasks etc hence helping police personnel to plan better and execute with greater efficiency."
+	},	{
+		"sentence": "The Configuration module of the CCTNS helps keep the application configured according to the states requirements in addition to keeping data elements/rules up to date."
+	},	{
+		"sentence": "With a proper configuration, information such as act and sections, state specific data, castes, tribes, property information and other can be created, updated and deleted.",
+		"causality": {
+			"cause": "proper configuration",
+			"effect": "information such as act and sections, state specific data, castes, tribes, property information and other can be created, updated and deleted"
+		}
+	},	{
+		"sentence": "The solution should provide detailed context-sensitive help material for all the possible actions and scenarios on all user interfaces in the application."
+	},	{
+		"sentence": "The solution should provide detailed context-sensitive help material for all the possible actions and scenarios on all user interfaces in the application."
+	},	{
+		"sentence": "The solution should provide an interface for the user to log any defects or enhancement requests on the application and track thereafter."
+	},	{
+		"sentence": "The solution should send alerts to the user if the user chooses to whenever any action has been taken on the alert.",
+		"causality": {
+			"cause": "the user chooses to whenever any action has been taken on the alert",
+			"effect": "The solution should send alerts to the user"
+		}
+	},	{
+		"sentence": "The solution should enable the user to track the submitted defect or enhancement request."
+	},	{
+		"sentence": "The solution should enable the help-desk user to view the reports on the submitted defects or enhancement requests category-wise, status-wise, and age- wise."
+	},	{
+		"sentence": "The support solution should be accessible to the users both from within the application and also outside the application through a browser interface."
+	},	{
+		"sentence": "Once the audit trail functionality has been activated, the System must track events without manual intervention, and store in the audit trail information about them.",
+		"causality": {
+			"cause": "the audit trail functionality has been activated",
+			"effect": "the System must track events without manual intervention, and store in the audit trail information about them"
+		}
+	},	{
+		"sentence": "The System must maintain the audit trail for as long as required, which will be at least for the life of the case to which it refers."
+	},	{
+		"sentence": "The System must ensure that audit trail data is available for inspection on request, so that a specific event can be identified and all related data made accessible, and that this can be achieved by authorised external personnel who have little or no familiarity with the system.",
+		"causality": {
+			"cause": "The System must ensure that audit trail data is available for inspection on request",
+			"effect": "a specific event can be identified and all related data made accessible, and that this can be achieved by authorised external personnel who have little or no familiarity with the system"
+		}
+	},	{
+		"sentence": "The System must be able to export audit trails for specified cases."
+	},	{
+		"sentence": "This functionality can be used by external auditors who wish to examine or analyse system activity."
+	},	{
+		"sentence": "The System must be able to capture and store violations attempted violations, of access control mechanisms."
+	},	{
+		"sentence": "The System should be able to provide reports for actions on cases organised by workstation and by network address."
+	},	{
+		"sentence": "The requirements specify the requirements to control the user access to correspondences, files, and records and various functionalities provided within the system."
+	},	{
+		"sentence": "The System must allow the user to limit access to cases to specified users or user groups."
+	},	{
+		"sentence": "The system should provide for role-based control for the functionality within the system."
+	},	{
+		"sentence": "The System must allow a user to be a member of more than one group."
+	},	{
+		"sentence": "The System must allow only admin-users to set up user profiles and allocate users to groups."
+	},	{
+		"sentence": "The System should allow a user to stipulate which other users or groups can access cases."
+	},	{
+		"sentence": "The System must allow changes to security attributes for groups or users to be made only by super-user."
+	},	{
+		"sentence": "If a user performs a quick or advanced search, the System must never include in the search result list any record which the user does not have the right to access.",
+		"causality": {
+			"cause": "a user performs a quick or advanced search",
+			"effect": "the System must never include in the search result list any record which the user does not have the right to access"
+		}
+	},	{
+		"sentence": "If the System allows users to make unauthorised attempts to access cases, it must log these in the audit trail.",
+		"causality": {
+			"cause": "the System allows users to make unauthorised attempts to access cases",
+			"effect": "it must log these in the audit trail"
+		}
+	},	{
+		"sentence": "Any access to cases, and all other activities involving the cases and related documents or data should also need to be stored in the audit trail to ensure legal admissibility and to assist in data recovery."
+	},	{
+		"sentence": "All error messages produced by the System must be meaningful, so that they can be appropriately acted upon by the users who are likely to see them.",
+		"causality": {
+			"cause": "All error messages produced by the System must be meaningful",
+			"effect": "they can be appropriately acted upon by the users who are likely to see them"
+		}
+	},	{
+		"sentence": "Ideally, each error message will be accompanied by explanatory text and an indication of the action(s) which the user can take in response to the error."
+	},	{
+		"sentence": "The System must employ a single set of user interface rules, or a small number of sets to provide a familiar and common look and feel for the application."
+	},	{
+		"sentence": "The System must be able to display several entities simultaneously."
+	},	{
+		"sentence": "The interfaces must be made customizable or user-configurable to the extent possible."
+	},	{
+		"sentence": "Such configurations must be saved in the user profile."
+	},	{
+		"sentence": "The System user interface must be suitable for users with special needs; that is, compatible with specialist software that may be used and with appropriate interface guidelines."
+	},	{
+		"sentence": "The System must provide End User and Administrator functions which are easy to use and intuitive throughout."
+	},	{
+		"sentence": "Frequently-executed System transactions must be designed so that they can be completed with a small number of interactions."
+	},	{
+		"sentence": "The user interfaces should be designed to make them user-intuitive."
+	},	{
+		"sentence": "The user interfaces of the system should comply with Standard ISO 9241."
+	},	{
+		"sentence": "ICT accessibility: ISO 9241-20 shall be the standard for guidance on ICT accessibility."
+	},	{
+		"sentence": "Application user interfaces to meet its requirements and recommendations."
+	},	{
+		"sentence": "Software accessibility ISO 9241-171 shall be the standard for guidance on software accessibility."
+	},	{
+		"sentence": "User interfaces should meet its requirements and recommendations."
+	},	{
+		"sentence": "Content accessibility WCAG 1.0 shall be the standard used for guidance on content accessibility."
+	},	{
+		"sentence": "The application logo to be available on all pages as a link to the home page."
+	},	{
+		"sentence": "Providing text equivalents for non-text media objects: All non-text media objects, such as graphical images or video, should be provided with alternative equivalent textual descriptions and/or with equivalent text-based functionality."
+	},	{
+		"sentence": "Making navigation self-descriptive: Navigation should be designed to help users understand where they are, where they have been and where they can go next."
+	},	{
+		"sentence": "General guidance on achieving self-descriptiveness is given in ISO 9241-110."
+	},	{
+		"sentence": "Showing users where they are: Each presentation segment should provide the user with a clear and sufficient indication of where he or she is in the navigation structure and of the current segment position with respect to the overall structure."
+	},	{
+		"sentence": "Offering alternative access paths: Alternative access paths for navigating to a specific unit of content should be offered to support different navigation strategies."
+	},	{
+		"sentence": "Minimizing navigation effort: The number of navigation steps needed to reach a certain piece of content should be minimized as long as different mental models, navigation strategies and tasks of the user are taken into account."
+	},	{
+		"sentence": "Splash screens should be avoided unless they provide useful content or feedback about the application state to the user."
+	},	{
+		"sentence": "If a splash screen is used, a navigation option to skip it should be offered.",
+		"causality": {
+			"cause": "a splash screen is used",
+			"effect": "a navigation option to skip it should be offered"
+		}
+	},	{
+		"sentence": "Avoiding opening unnecessary windows: Additional windows such as new browser windows or pop-up windows should only be opened if this supports the user's task."
+	},	{
+		"sentence": "Opening new windows can distract, confuse or impede users for a variety of reasons."
+	},	{
+		"sentence": "They can superimpose the primary window, hiding relevant information."
+	},	{
+		"sentence": "They could make it cognitively more difficult to understand the navigation structure with negative effects on both usability and accessibility."
+	},	{
+		"sentence": "They also require additional user actions for closing unwanted windows."
+	},	{
+		"sentence": "Vertical scrolling should be minimized."
+	},	{
+		"sentence": "This may be done by placing important information at the top and providing links to information that is further down the page."
+	},	{
+		"sentence": "Horizontal scrolling should be avoided wherever possible."
+	},	{
+		"sentence": "Designing for input device independence: User interfaces should be designed to allow activation of controls by a variety of input devices."
+	},	{
+		"sentence": "The ability to choose between different input devices for activating controls such as links, fields and buttons is important both for users who prefer a certain input mode, mobile users and users with disabilities."
+	},	{
+		"sentence": "In general, device independence can be achieved if the functionality is operable via a keyboard."
+	},	{
+		"sentence": "Making user interfaces robust: User interfaces should be designed to be as robust as possible in the face of changing technology."
+	},	{
+		"sentence": "This encompasses being able to present content containing newer technologies by older user agents as well as designing content to be usable with future technologies."
+	},	{
+		"sentence": "Acceptable opening / download times: Application pages should be designed and implemented so that there are acceptable opening times and download times for the expected range of technical contexts of use."
+	},	{
+		"sentence": "This is particularly important for frequently accessed pages or pages that are important for user navigation and exploration, such as the home page."
+	},	{
+		"sentence": "Minimizing user errors: Potential user errors as well as the effort needed to recover from errors should be minimized."
+	},	{
+		"sentence": "Providing clear error messages: The content of error messages shown on the pages or special error pages should clearly state the reason why the error occurred and, if possible, actions the user can take to resolve the error."
+	},	{
+		"sentence": "Users expect error messages to be in the same language as the user interface."
+	},	{
+		"sentence": "Using appropriate formats, units of measurement or currency: When designing user interfaces for use by diverse groups, input and output of information elements such as currency, units of measurement, temperatures, date and time, phone numbers, address or postal codes should be designed so that they are usable."
+	},	{
+		"sentence": "Making text resizable by the user: Text should be able to be resized by the user, using functions provided by the user agent or other appropriate means."
+	},	{
+		"sentence": "Text quality: The quality of textual content with respect to spelling and grammar should be sufficient so as not to impede readability."
+	},	{
+		"sentence": "Writing style: The reading and understanding of the textual content on the screen should be supported by suitable means, including the use of short sentences, the division of the text into shorter chunks or the presentation of content items in the form of bullet points."
+	},	{
+		"sentence": "Supporting text skimming: Fast skimming of text should be supported by the provision of clear links, bulleted lists, highlighted keywords, logical headings, and short phrases and sentences."
+	},	{
+		"sentence": "Readability of text: Text presented on the pages should be readable taking into account the expected display characteristics and spatial arrangement."
+	},	{
+		"sentence": "ISO 9241-303 shall be consulted for screen text legibility requirements."
+	},	{
+		"sentence": "Distinguishable within-page links: Within-page links should be clearly distinguishable from other links that lead to a different page."
+	},	{
+		"sentence": "EX Within-page links are shown with dashed rather than solid underlines."
+	},	{
+		"sentence": "Avoiding link overload: Text pages containing large proportions of links should be formatted so that the presence of links does not impede the readability of the text."
+	},	{
+		"sentence": "Using familiar terminology for navigation links: Navigation links - particularly links representing the main navigation structure - should be labelled with terms that are familiar to the user, based on his/her general knowledge, prior experience in the application domain or experience of using other systems."
+	},	{
+		"sentence": "Using descriptive link labels: The target or purpose of a link should be directly indicated by its label, avoiding generic labels such as go or 'click here' except where the purpose of the link is clear from its context on the page or the labels have commonly understood semantics in the particular application domain."
+	},	{
+		"sentence": "Using appropriate terminology specific to the user's tasks and information needs is important for making the content easy to understand."
+	},	{
+		"sentence": "Marking links opening new windows: Links that open new browser windows or pop-up windows should be clearly marked."
+	},	{
+		"sentence": "Distinguishing navigation links from controls: Navigation links should be clearly distinguishable from controls activating some action."
+	},	{
+		"sentence": "Typical action types in user interfaces include manipulating application data, performing searches, communication actions, such as opening a new e-mail window or starting a chat function, and presentation-related actions, such as sorting a list of search results."
+	},	{
+		"sentence": "Providing printable document versions: If a document is either too long, dispersed over several pages or in a specific layout that is not suitable for online reading, a printer-friendly version of the document should be provided that prints the content in a form acceptable to the user."
+	},	{
+		"sentence": "While white space is an important means of visually organizing the different content elements on a page, if the distance between the blocks of information displayed becomes too large, rapid skimming of the page can be impeded.",
+		"causality": {
+			"cause": "the distance between the blocks of information displayed becomes too large",
+			"effect": "rapid skimming of the page can be impeded"
+		}
+	},	{
+		"sentence": "Selecting appropriate page lengths: The length of a page should be selected so as to support the primary purpose and use of the page."
+	},	{
+		"sentence": "Short pages are generally more appropriate for homepages, navigation pages, or overview pages that need to be read quickly."
+	},	{
+		"sentence": "Longer pages can be more appropriate when users want to read the content without interruptions or when the page needs to match a paper counterpart."
+	},	{
+		"sentence": "Using colour: Colour should be used with care, taking into account human capabilities and restrictions in perceiving colour, and not as the only means of conveying information."
+	},	{
+		"sentence": "Color should never be the only means of coding."
+	},	{
+		"sentence": "Some users may have difficulties in perceiving certain colors or color combinations."
+	},	{
+		"sentence": "If frames are used, care should be taken to avoid possible problems, for example, those involving the use of the back button, bookmarking of pages, or scrolling of information.",
+		"causality": {
+			"cause": "frames are used",
+			"effect": "care should be taken to avoid possible problems"
+		}
+	},	{
+		"sentence": "When frames are used, it is important to title each frame, and to describe its purpose and how frames relate to one another other.",
+		"causality": {
+			"cause": "frames are used",
+			"effect": "it is important to title each frame, and to describe its purpose and how frames relate to one another other"
+		}
+	},	{
+		"sentence": "If frames are used, an alternative way of presenting relevant information without frames should be provided.",
+		"causality": {
+			"cause": "frames are used",
+			"effect": "an alternative way of presenting relevant information without frames should be provided"
+		}
+	},	{
+		"sentence": "When style sheets and/or frames are turned off it should be possible for the user to read and understand the page; alternatively, the user should be provided with an equivalent alternative text-only page.",
+		"causality": {
+			"cause": "style sheets and/or frames are turned off",
+			"effect": "it should be possible for the user to read and understand the page"
+		}
+	},	{
+		"sentence": "Consistent page layout: Pages should be designed using consistent layout schemes, supporting the user in finding similar information at the same position on different pages."
+	},	{
+		"sentence": "Overall layout schemes apply to all pages and are preferable when all pages have a similar structure."
+	},	{
+		"sentence": "Frequently, however, different pages have different purposes and types of content."
+	},	{
+		"sentence": "In such cases, pages can usually be grouped in different categories, using one layout scheme for each category consistently."
+	},	{
+		"sentence": "Placing title information consistently: Page titles should be placed in a consistent location on the different pages."
+	},	{
+		"sentence": "Observing principles of human perception When designing application pages, the general principles of human perception should be taken into account."
+	},	{
+		"sentence": "The International Standards mentioned below shall be consulted for guidance."
+	},	{
+		"sentence": "Practical guidelines for presenting information to the user are to be found in ISO 9241-12."
+	},	{
+		"sentence": "Guidance on selecting and using different forms of interaction techniques is to be found in ISO 9241-14 to ISO 9241-17."
+	},	{
+		"sentence": "ISO 9241-14 gives guidance about menus, ISO 9241-15 about command dialogues, ISO 9241-16 about direct manipulation and ISO 9241-17 about forms."
+	},	{
+		"sentence": "In addition, when designing multimedia information presentations, the design principles and recommendations described in ISO 14915-1 to ISO 14915-3 should be taken into account.",
+		"causality": {
+			"cause": "designing multimedia information presentations",
+			"effect": "the design principles and recommendations described in ISO 14915-1 to ISO 14915-3 should be taken into account"
+		}
+	},	{
+		"sentence": "Appropriate content presentation also plays a key role in accessibility."
+	},	{
+		"sentence": "Linking back to the home page or landmark pages: Each page should contain a link leading to the home page of the application or to a landmark page that is easy to recognize for the user."
+	},	{
+		"sentence": "Providing a site map: A separate navigation overview such as a site map should be provided for application showing the structure of the site in an overview form."
+	},	{
+		"sentence": "Consistency between navigation components and content: If navigation components the topic currently visible in the content area."
+	},	{
+		"sentence": "Placing navigation components consistently: Navigation components should be placed consistently on the pages or in the framesets in the pages of the application."
+	},	{
+		"sentence": "Individualization and user adaptation : Adapting the content and the navigation of a user interface to individual users or user groups can be a useful mechanism for providing information that is of interest to the users and for making access to relevant information more efficient."
+	},	{
+		"sentence": "User adaptation can also be important for making the user interface more accessible."
+	},	{
+		"sentence": "Different approaches can be used for achieving these goals, like providing users with means for customizing the user interface to their personal needs."
+	},	{
+		"sentence": "When providing different access paths or navigation structures for different user groups, the tasks and information needs of these user groups should be taken into consideration.",
+		"causality": {
+			"cause": "providing different access paths or navigation structures for different user groups",
+			"effect": "the tasks and information needs of these user groups should be taken into consideration"
+		}
+	},	{
+		"sentence": "Making individualization and adaptation evident: It should be made evident to the user when individualization and/or adaptation are used."
+	},	{
+		"sentence": "If predefined user profiles or user-specified profiles are used for individualizing or adapting content, the profile currently used should be made evident.",
+		"causality": {
+			"cause": "predefined user profiles or user-specified profiles are used for individualizing or adapting content",
+			"effect": "the profile currently used should be made evident"
+		}
+	},	{
+		"sentence": "If profiles are used, it is important to provide users with information about this concept and its implications.",
+		"causality": {
+			"cause": "profiles are used",
+			"effect": "it is important to provide users with information about this concept and its implications"
+		}
+	},	{
+		"sentence": "If user-specified profiles are used, users should be able to see, modify and delete that profile on demand.",
+		"causality": {
+			"cause": "user-specified profiles are used",
+			"effect": "users should be able to see, modify and delete that profile on demand"
+		}
+	},	{
+		"sentence": "The user interfaces of the system should follow the guidelines specified under www.usability.gov."
+	},	{
+		"sentence": "The planned downtime for the System must not exceed <xx> hours per <rolling three month period>."
+	},	{
+		"sentence": "The System is considered to be down if any user is unable to perform any normal System function and if this failure is attributed to any component of the System other than the workstation.",
+		"causality": {
+			"cause": "any user is unable to perform any normal System function and if this failure is attributed to any component of the System other than the workstation",
+			"effect": "The System is considered to be down"
+		}
+	},	{
+		"sentence": "Unplanned downtime for the System must not exceed <xx hours/minutes> per <rolling three month period>."
+	},	{
+		"sentence": "The number of incidents of unplanned downtime for the System must not exceed <x> per <rolling three month period>."
+	},	{
+		"sentence": "In the event of any software or hardware failure, it must be possible to restore the System within no more than <xx> hours.",
+		"causality": {
+			"cause": "the event of any software or hardware failure",
+			"effect": "it must be possible to restore the System within no more than <xx> hours"
+		}
+	},	{
+		"sentence": "The System must provide adequate response times for commonly performed functions under both standard and peak conditions."
+	},	{
+		"sentence": "The System must be able to perform a simple search within 5-8 seconds and a advanced search within 10-15 seconds regardless of the storage capacity or number of cases in the system."
+	},	{
+		"sentence": "In this context, performing a search means returning a result list."
+	},	{
+		"sentence": "It does not include retrieving the records themselves."
+	},	{
+		"sentence": "The System must be able to retrieve and display within 5-8 seconds the case which has been accessed within the previous 2 months, regardless of storage capacity or number of cases in the system."
+	},	{
+		"sentence": "This requirement is intended to allow for rapid retrieval of frequently-used cases, on the understanding that frequency of use is typically correlated with recent use."
+	},	{
+		"sentence": "The System must be able to retrieve and display within 20 seconds the case which has not been accessed within the previous 2 months, regardless of storage capacity or number of cases in the system."
+	},	{
+		"sentence": "This requirement is intended to allow for cases where cases used infrequently are stored on slower media than more active records."
+	},	{
+		"sentence": "The System be scaleable and must not have any features which would preclude use in small or large police stations, with varying numbers of cases handled."
+	},	{
+		"sentence": "The proposed functional architecture is modeled around centralized deployment to facilitate ease of maintenance and leverage advancement in open standards and web technologies."
+	},	{
+		"sentence": "The 3 C's forms the guiding principle for the architecture."
+	},	{
+		"sentence": "The functional architecture of the CCTNS solution is given in the figure below."
+	},	{
+		"sentence": "The functional architecture is composed of 4 major components based on SOA principles."
+	},	{
+		"sentence": "Each of the components contains multiple services as defined by Service Definition."
+	},	{
+		"sentence": "The core services, support layer and security and access control components can be deployed as standard components with necessary configuration changes."
+	},	{
+		"sentence": "The customization layer can override and add to the core services based on the specific state requirements and can be plugged with the core services."
+	},	{
+		"sentence": "The deployment of the application will be at state level and will be configured and customized as per the state specific extensions."
+	},	{
+		"sentence": "The system should support multilingual interface."
+	},	{
+		"sentence": "The system should be designed in manner that operational data is not lost in case of any failure of equipment or communication network.",
+		"causality": {
+			"cause": "any failure of equipment or communication network",
+			"effect": "operational data is not lost"
+		}
+	},	{
+		"sentence": "The system should work even in an offline mode with the critical functionality."
+	},	{
+		"sentence": "The system should be designed to have satisfactory performance even in Police Stations connected on low-bandwidth."
+	},	{
+		"sentence": "The system should be implemented using Service Oriented Architecture and have a modular design."
+	},	{
+		"sentence": "The system should be developed on Open Standards."
+	},	{
+		"sentence": "The system should be built on a common User Access and Authentication Service to ensure Single-Sign on for the end-user."
+	},	{
+		"sentence": "The system should be developed for a centralized deployment and maintenance."
+	},	{
+		"sentence": "The system should be developed to be deployed in a 3-tier datacenter architecture."
+	},	{
+		"sentence": "The system should be designed to have a n-tier architecture with the presentation logic separated from the business logic that is again separated from the data-access logic."
+	},	{
+		"sentence": "The system should be extensible to provide access to the interfaces through PDA's and mobile data terminals."
+	},	{
+		"sentence": "The system should adopt standardized formats and common metadata elements."
+	},	{
+		"sentence": "The system should be designed for access through browser-based systems and must impose minimal requirements on the client device."
+	},	{
+		"sentence": "The system must support multiple types of communication services for remote access."
+	},	{
+		"sentence": "The system should have capability to support public access to a subset of data and functionality."
+	},	{
+		"sentence": "The system should support multi-tier authentication where required."
+	},	{
+		"sentence": "The system should support SSL encrypted connections."
+	},	{
+		"sentence": "The system should support secure virtual private network connections."
+	},	{
+		"sentence": "The system should use HTTPS as the communication protocol."
+	},	{
+		"sentence": "The system should run on multiple browsers."
+	},	{
+		"sentence": "The system should support selective encryption of the stored data."
+	},	{
+		"sentence": "The system should ensure secure transmission of data over the network and utilize SSL and 2-way digital signatures."
+	}
+]

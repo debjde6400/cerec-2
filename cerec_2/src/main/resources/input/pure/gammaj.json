@@ -1,0 +1,421 @@
+[
+	{
+		"sentence": "This is the Software Requirements Specification for GAMMA-J's Web Store."
+	},	{
+		"sentence": "This Web Store is designed to allow new online store owners a quick and easy means to setup and perform sales and other core business over the internet."
+	},	{
+		"sentence": "This document will outline all of the functions, capabilities and requirements for Version 1 of GAMMA-J's Web Store."
+	},	{
+		"sentence": "Version 1 is planned for implementation on a plug and play USB Key."
+	},	{
+		"sentence": "Future versions will be based on other network appliances."
+	},	{
+		"sentence": "This document is intended to flush out the requirements by the customer GAMMA-J."
+	},	{
+		"sentence": "The customer can review this document to ensure their needs along with the needs of their user's are being met in their new Web Store program."
+	},	{
+		"sentence": "The development team will also use this document for guidance on overall design and implementation of the Web Store system."
+	},	{
+		"sentence": "The test and verification team can reference this to ensure the requirements are being meet for the customer."
+	},	{
+		"sentence": "Finally, the tech writer will use this to assist with user documentation."
+	},	{
+		"sentence": "This document is designed to be review from beginning to end; however, readers who are new to technical documentation may want to refer to Appendix E: Data Dictionary first."
+	},	{
+		"sentence": "This document draws insight from the Web Store System Overview, Functional Needs Statement, and Stakeholder Goals List."
+	},	{
+		"sentence": "Web Store is a new system designed for users new to the online E-commerce."
+	},	{
+		"sentence": "This will be a plug and play device with its own CPU and operating system."
+	},	{
+		"sentence": "The Web Store will be a quick and easy means to setup and operate an online Web Store."
+	},	{
+		"sentence": "The Figure 2.1 is a context diagram showing external system interfaces."
+	},	{
+		"sentence": "Account Management allows users to create, edit, and view accounts information."
+	},	{
+		"sentence": "It also allows the user to login/out of the system."
+	},	{
+		"sentence": "Search Engine is the tool that assists the user in finding a specific item in the database."
+	},	{
+		"sentence": "It can receive search criteria, find search criteria, and return the results of the search."
+	},	{
+		"sentence": "Product Management allows sales personnel to manage the product line shown on the web site."
+	},	{
+		"sentence": "Shopping Cart is temporary storage for customers shopping on the web."
+	},	{
+		"sentence": "Items from the inventory can be reserved in a virtual cart until the customer decides to purchase them."
+	},	{
+		"sentence": "Purchasing and Payment is used to approve and transfer payment from buyers when purchasing items in the cart."
+	},	{
+		"sentence": "System Administrator is generally the owner that takes care of maintenance for the Web Store system."
+	},	{
+		"sentence": "The administrator will be in charge of assigning privileges of accounts."
+	},	{
+		"sentence": "Suggested more than one individual can have administrator privilege to ensure advisability."
+	},	{
+		"sentence": "Full documentation will be provided to the Administrator to assist with this process."
+	},	{
+		"sentence": "Sales Personnel is generally the owner of the Web Store tasked with updating inventory and product line descriptions."
+	},	{
+		"sentence": "Once added, sales personnel can add, delete and change descriptions, pictures, prices, and when ready flag items for customers to buy."
+	},	{
+		"sentence": "A customer is an individual wishing to purchase inventory from GAMMA-J's Web Store."
+	},	{
+		"sentence": "The Web store will have a variety of clientele depending upon the inventory loaded on the Key."
+	},	{
+		"sentence": "When creating a new account on Web Store it will default as a customer account.",
+		"causality": {
+			"cause": "creating a new account on Web Store",
+			"effect": "it will default as a customer account"
+		}
+	},	{
+		"sentence": "Later if the account needs to be upgraded the administrator can accomplish this via the administrator interface.",
+		"causality": {
+			"cause": "the account needs to be upgraded",
+			"effect": "the administrator can accomplish this via the administrator interface"
+		}
+	},	{
+		"sentence": "Web Store shall operate with the following internet browsers: Microsoft Internet Explorer version 6 and 7, Netscape Communicator Version 4 and 5."
+	},	{
+		"sentence": "Web Store shall operate on an Intel based system with Slackware Linux 2.6 and Apache Web Server."
+	},	{
+		"sentence": "The operating system is designed by the Yoggie Corporation."
+	},	{
+		"sentence": "Although maintenance documentation will be supplied and the operating system will be tested, the developers of this Web Store are not responsible for the functionality of the operating system."
+	},	{
+		"sentence": "The system shall use SQL based database to store inventory information."
+	},	{
+		"sentence": "USB interface and divers are provided by Yoggie Corporation."
+	},	{
+		"sentence": "Must use a SQL based database."
+	},	{
+		"sentence": "SQL standard is the most widely used database format."
+	},	{
+		"sentence": "Restricting to SQL allows easy of use and compatibility for Web Store."
+	},	{
+		"sentence": "Compatibility is only tested and verified for Microsoft Internet Explorer version 6 and 7, Netscape Communicator Version 4 and 5."
+	},	{
+		"sentence": "Other versions may not be 100% compatible."
+	},	{
+		"sentence": "Also other browsers such as Mozilla or Firefox may not be 100% compatible."
+	},	{
+		"sentence": "Shall install online help for users via the web interface."
+	},	{
+		"sentence": "Shall deliver Operations and Maintenance manual, Users Guide book, and Installation Instructions for the Administrator."
+	},	{
+		"sentence": "Assume the delivery of development, test and evaluate samples of the USB system from Yoggie."
+	},	{
+		"sentence": "Assume Yoggie will freeze the baseline of the USB system after delivery."
+	},	{
+		"sentence": "Customers will be able to create accounts to store their profiles, contact information, purchase history, and confirm orders."
+	},	{
+		"sentence": "This is a high priority system feature."
+	},	{
+		"sentence": "Security methods will ensure that customer accounts remain confidential and resistant to tampering."
+	},	{
+		"sentence": "Customers will be able to create accounts to store their customer profiles, configure contact information, view their purchase history, and confirm orders."
+	},	{
+		"sentence": "Customers will be able to register, log in, and log out of their accounts."
+	},	{
+		"sentence": "Furthermore, Customer profiles will also include payment information, such as the ability to store credit card information, and address information."
+	},	{
+		"sentence": "Inventory management will allow for the placement of products into multi-tiered categories."
+	},	{
+		"sentence": "This is a medium priority system feature."
+	},	{
+		"sentence": "Products will be stored in multi-tiered categories; a category can contain sub categories or products."
+	},	{
+		"sentence": "The inventory management will allow for administrators to update the categories, the products placed in categories, and the specific product details."
+	},	{
+		"sentence": "Customers will be able to add and store products for purchase within the shopping cart."
+	},	{
+		"sentence": "This feature is a medium priority system feature."
+	},	{
+		"sentence": "Customers will also be able to add products into the shopping cart."
+	},	{
+		"sentence": "The shopping cart will clearly display the number of items in the cart, along with the total cost."
+	},	{
+		"sentence": "The customer will also be able to add to or remove products from the shopping cart prior to checkout and order confirmation."
+	},	{
+		"sentence": "Order confirmation will allow the customer to review their order after checkout prior to confirmation."
+	},	{
+		"sentence": "This is a medium priority system feature."
+	},	{
+		"sentence": "Customers will be able to confirm the order after checkout."
+	},	{
+		"sentence": "If the order is incorrect, the customer will be able to revise and update their order.",
+		"causality": {
+			"cause": "the order is incorrect",
+			"effect": "the customer will be able to revise and update their order"
+		}
+	},	{
+		"sentence": "The customer will then receive a confirmation email with the specific order details."
+	},	{
+		"sentence": "The interface will be presented to the customer in a web browser."
+	},	{
+		"sentence": "The interface must remain consistent among various web browsers and be intuitive to the customer."
+	},	{
+		"sentence": "This is a medium priority system feature."
+	},	{
+		"sentence": "Customers will be presented with an unambiguous interface to assist in browsing the categories and products."
+	},	{
+		"sentence": "Customers will be able to search for products matching their search criteria."
+	},	{
+		"sentence": "The interface will be compatible with all major web browsers such as Internet Explorer, Mozilla Navigator, Mozilla Firefox, Opera, and Safari."
+	},	{
+		"sentence": "The system will feature an API to allow customers to build custom plug-ins to be able to meet their needs."
+	},	{
+		"sentence": "This is a high priority system feature as it ensures the flexibility of the system to be tailored to specific needs."
+	},	{
+		"sentence": "The system will implement an Application Interface to allow for various plug-ins to interact with the system."
+	},	{
+		"sentence": "The plug-in API will be well documented and specifications will be provided to plug-in developers."
+	},	{
+		"sentence": "The order database of WebOrder will communicate with the account system through a programmatic interface for the billing operations."
+	},	{
+		"sentence": "Through programmatic interface, WebOrder will transmit information of items ordered by customers to the Inventory management system."
+	},	{
+		"sentence": "The WebOrder system shall send an e-mail confirmation to the customer that the items they ordered will be delivered to the shipping address along with tracking number."
+	},	{
+		"sentence": "The WebOrder system shall send an e-mail to System Administrator regarding any technical queries from customers or sales people."
+	},	{
+		"sentence": "Upon the USB being plugged in the system shall be able to be deployed and operational in less than 1 minute."
+	},	{
+		"sentence": "The system shall be able to handle 1000 customers logged in concurrently at the same time."
+	},	{
+		"sentence": "The system shall be able to retrieve 200 products per second."
+	},	{
+		"sentence": "The system shall be able to add product to shopping cart in less than 2ms."
+	},	{
+		"sentence": "The system shall be able to search for a specified product in less than 1 second."
+	},	{
+		"sentence": "The system shall be able to email customer and vendor in less than 1 second."
+	},	{
+		"sentence": "The system shall be able to validate credit card in less than 2 seconds."
+	},	{
+		"sentence": "The system shall be able to acquire shipping charges in less than 2 seconds."
+	},	{
+		"sentence": "The system shall be able to restore 1000 records per second."
+	},	{
+		"sentence": "The system will do periodic backups through a live internet connection."
+	},	{
+		"sentence": "The system shall validate credit cards against fraud."
+	},	{
+		"sentence": "The system shall encrypt all sensitive information via https."
+	},	{
+		"sentence": "The system shall encrypt all customer data in database."
+	},	{
+		"sentence": "The system shall auto detect IP DOS attacks and block IP automatically."
+	},	{
+		"sentence": "The system shall detect consecutive failed login attempts."
+	},	{
+		"sentence": "The system shall be protected by open source firewall called Firestarter."
+	},	{
+		"sentence": "The system shall have an availability of 99.99%."
+	},	{
+		"sentence": "The system shall perform searches via Dijkstra's shortest path algorithm."
+	},	{
+		"sentence": "For returning customers, the system shall validate 'existing' credit card in system after each log in."
+	},	{
+		"sentence": "The system shall automatically compress image files that are too large in size."
+	},	{
+		"sentence": "The system will employ on demand asynchronous loading for faster execution of pages."
+	},	{
+		"sentence": "The system shall validate email address existence."
+	},	{
+		"sentence": "The system shall be easy to use."
+	},	{
+		"sentence": "The system shall be easy to learn."
+	},	{
+		"sentence": "The system shall utilize help bubbles to assist managers, customers, and administrators."
+	},	{
+		"sentence": "The system shall employ easy to locate buttons."
+	},	{
+		"sentence": "The system shall prompt customer with friend easy to read error messages."
+	},	{
+		"sentence": "The system shall utilize consistent symbols and colors for clear notifications."
+	},	{
+		"sentence": "The system shall utilize interchangeable plugins."
+	},	{
+		"sentence": "The system shall be easily updatable for fixes and patches."
+	},	{
+		"sentence": "The system shall create logs of all changes, updates, or fixes that are done to the site."
+	},	{
+		"sentence": "The system shall be easy to upgrade."
+	},	{
+		"sentence": "The system shall be extremely portable via the usb drive."
+	},	{
+		"sentence": "The system shall be easy to migrate or backed up via another usb drive."
+	},	{
+		"sentence": "The system should be able to run under debug mode."
+	},	{
+		"sentence": "The system should be able to run test credit card transactions."
+	},	{
+		"sentence": "The system should be able to run test shipping orders."
+	},	{
+		"sentence": "The system should be able to create test environment of weborder system."
+	},	{
+		"sentence": "The system hardware shall be fixed and patched via an internet connection."
+	},	{
+		"sentence": "Yoggie shall coordinate on future enhancement and features with our organization."
+	},	{
+		"sentence": "Register a new customer account with the system."
+	},	{
+		"sentence": "Customer must be able to access the web order system via a web browser with HTTPS."
+	},	{
+		"sentence": "Customer clicks button or link to 'Register'."
+	},	{
+		"sentence": "The Customer registers and creates a new customer account with the system."
+	},	{
+		"sentence": "Login to a customer account with the system."
+	},	{
+		"sentence": "Customer account must already be registered."
+	},	{
+		"sentence": "Customer clicks button or link to 'Login'."
+	},	{
+		"sentence": "The Customer is logged into the system."
+	},	{
+		"sentence": "Edit the customer account details."
+	},	{
+		"sentence": "Customer must be logged-in on the system."
+	},	{
+		"sentence": "Customer clicks on the button or link to 'Edit Account'."
+	},	{
+		"sentence": "The Customer has changed the account details."
+	},	{
+		"sentence": "Logout the customer account on the system."
+	},	{
+		"sentence": "Customer must be logged-in on the system."
+	},	{
+		"sentence": "Customer clicks on the button or link to 'Logout'."
+	},	{
+		"sentence": "The Customer is logged out of the system."
+	},	{
+		"sentence": "Customer adds item(s) in the cart."
+	},	{
+		"sentence": "The customer must be logged-in on the system."
+	},	{
+		"sentence": "Customer clicks the button or link to 'Add To Cart'."
+	},	{
+		"sentence": "The Customer has added item(s) to the shopping cart."
+	},	{
+		"sentence": "Customer places and confirms an order for the checkout process."
+	},	{
+		"sentence": "Customer clicks button or link to 'Ckeckout'."
+	},	{
+		"sentence": "The Customer has placed and confirmed an order."
+	},	{
+		"sentence": "Login to an Administrator account with the system."
+	},	{
+		"sentence": "Administrator account must already be registered."
+	},	{
+		"sentence": "Administrator clicks button or link to 'Login'."
+	},	{
+		"sentence": "The Administrator is logged into the system."
+	},	{
+		"sentence": "Logout the Administrator account on the system."
+	},	{
+		"sentence": "Administrator must be logged-in on the system."
+	},	{
+		"sentence": "Administrator clicks button or link to 'Logout'."
+	},	{
+		"sentence": "The Administrator is logged out of the system."
+	},	{
+		"sentence": "Register a new customer, sales person, or administrator account with the system."
+	},	{
+		"sentence": "Administrator must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Administrator clicks button or link to 'Add Users'."
+	},	{
+		"sentence": "A new customer account is created within the system."
+	},	{
+		"sentence": "Remove a user from the system."
+	},	{
+		"sentence": "Administrator must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Administrator clicks button or link to Remove User."
+	},	{
+		"sentence": "An account has been deleted within the system."
+	},	{
+		"sentence": "Alter properties such as passwords and privileges of the user."
+	},	{
+		"sentence": "Administrator must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Administrator clicks button or link to Change User Properties."
+	},	{
+		"sentence": "An account has been altered within the system."
+	},	{
+		"sentence": "Install a new plug-in to the application."
+	},	{
+		"sentence": "Administrator must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Administrator clicks the button or link to 'Install Plug-ins'."
+	},	{
+		"sentence": "A new plug-in is installed in the application."
+	},	{
+		"sentence": "Remove a plug-in from the application."
+	},	{
+		"sentence": "Administrator must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Administrator clicks the button or link to 'Install Plug-ins'."
+	},	{
+		"sentence": "A plug-in is removed from the application."
+	},	{
+		"sentence": "Make changes to an installed plug-in."
+	},	{
+		"sentence": "Administrator must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Administrator clicks button or link to 'Manage Plug-ins'."
+	},	{
+		"sentence": "A plug-in's options have successfully been changed."
+	},	{
+		"sentence": "Install patches or software updates to the web store."
+	},	{
+		"sentence": "Administrator must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Administrator clicks the button or link to 'Install Patch'."
+	},	{
+		"sentence": "The web store was successfully updated."
+	},	{
+		"sentence": "Login to an account with the system."
+	},	{
+		"sentence": "Sales Person account must already be registered."
+	},	{
+		"sentence": "Sales Person clicks button or link to 'Login'."
+	},	{
+		"sentence": "The Sales Person is logged into the system."
+	},	{
+		"sentence": "Logout the Sales Person account on the system."
+	},	{
+		"sentence": "Sales Person must be logged-in on the system."
+	},	{
+		"sentence": "Sales Person clicks the button or link to 'Logout'."
+	},	{
+		"sentence": "The Sales Person is logged out of the system."
+	},	{
+		"sentence": "Add a product to the system."
+	},	{
+		"sentence": "Sales Person must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Sales Person clicks the button or link to 'Add Product'."
+	},	{
+		"sentence": "A new product is created within the system."
+	},	{
+		"sentence": "Remove a product from the system."
+	},	{
+		"sentence": "Sales Person must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Sales Person clicks the button or link to 'Remove Product'."
+	},	{
+		"sentence": "A product is deleted from the system."
+	},	{
+		"sentence": "Update Product attributes within the system."
+	},	{
+		"sentence": "Sales Person must be able to access the weborder system via a web browser with HTTPS."
+	},	{
+		"sentence": "Sales Person clicks the button or link to 'Update Product Attributes'."
+	},	{
+		"sentence": "The product attributes have been changed."
+	}
+]

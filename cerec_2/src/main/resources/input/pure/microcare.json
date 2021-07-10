@@ -1,0 +1,113 @@
+[
+	{
+		"sentence": "The purpose of this document is to explain the flow and the requirement of Voucher Management System (VMU) required by Marie Stopes International Uganda (MSIU) during the various meetings held between MSIU and Microcare from 28th of Nov 2005 to 30th of Nov 2005."
+	},	{
+		"sentence": "This document is purely based on the Functional Flow Diagram designed by Microcare."
+	},	{
+		"sentence": "The document will explain every small entity of the system including various code generations, Bar-coding and Graphical User Interface etc."
+	},	{
+		"sentence": "This document will help the system development team to understand the overall and detailed functions of every small entity in VMU and to design the system that will meet every requirement of the VMU program."
+	},	{
+		"sentence": "This document will help the testing team to prepare the Test Cases and will help them to test every module in the system and overall testing of the system, so that the testing team will have confidence on the quality of this system."
+	},	{
+		"sentence": "The approach was successfully applied in the sixties/seventies in South Korea and Taiwan."
+	},	{
+		"sentence": "In recent years also a programme was run in Nicaragua but the OBA has not been implemented in larger scale programs."
+	},	{
+		"sentence": "The principles of the voucher, the contents of the health care services, their required quality, the standards to be met by the providers and their infrastructure, as well as the measures for monitoring the quality have been defined in the PDS."
+	},	{
+		"sentence": "Each of the above modules are again subdivided into subsystems, those details are explained in below sections in the document."
+	},	{
+		"sentence": "This section of the document is going to explain the functionalities of the system, its subsystems and how it's integrated and working together."
+	},	{
+		"sentence": "During the system study, it was understood that the first pilot period, twenty thousand vouchers will be sold, but the VMU-system has the provision to upgrade to meet the additional market and projects needs."
+	},	{
+		"sentence": "As mentioned above the entire system is sub-divided into six modules and again the each module is subdivided into different subsystems."
+	},	{
+		"sentence": "The marketing and sales is the next step and the next module in the system."
+	},	{
+		"sentence": "This module will take care of following sub modules."
+	},	{
+		"sentence": "All fields with * are mandatory."
+	},	{
+		"sentence": "There will also be a provision for the other users to view the details of a distributor with purchase and sales details."
+	},	{
+		"sentence": "The sales team master is for the future development of this program, if this program is extended to a country-wide network, this master will help understand and tack sales information.",
+		"causality": {
+			"cause": "this program is extended to a country-wide network",
+			"effect": "this master will help understand and tack sales information"
+		}
+	},	{
+		"sentence": "The system will check the duplicated ID for the salesman and team."
+	},	{
+		"sentence": "The system can allow the duplicate names of the salesman."
+	},	{
+		"sentence": "On capture of any duplicate name the system will give a warning message to have the duplicate name or to change the name.",
+		"causality": {
+			"cause": "capture of any duplicate name",
+			"effect": "the system will give a warning message to have the duplicate name or to change the name"
+		}
+	},	{
+		"sentence": "For better reporting purposes it is better to have a differentiating indicator on the name."
+	},	{
+		"sentence": "The date of distribution will be current (system) date."
+	},	{
+		"sentence": "But the date of sale can be the past dates."
+	},	{
+		"sentence": "There will be a future date sale validation check available."
+	},	{
+		"sentence": "Cumulative Total Amount will show in Report footer for the previous payment done."
+	},	{
+		"sentence": "The system will generate message while creating a new staff with existing name, but the system will allow the user to save that new staff if its required.",
+		"causality": {
+			"cause": "The system will generate message",
+			"effect": "creating a new staff with existing name"
+		}
+	},	{
+		"sentence": "All above information's other than Qualification are mandatory during the creation of new staff under any VSP."
+	},	{
+		"sentence": "The system will automatically create Staff Code with Suffix as VSP Code + SC + 3 digit."
+	},	{
+		"sentence": "If any of the staff type is not available in the system, then the system should have the provision to navigate quickly to staff type master to enter the new staff type and then back to Staff Master screen.",
+		"causality": {
+			"cause": "any of the staff type is not available in the system",
+			"effect": "the system should have the provision to navigate quickly to staff type master to enter the new staff type and then back to Staff Master screen"
+		}
+	},	{
+		"sentence": "The above details are the master informationd and below listed information are the transaction details of a Claim."
+	},	{
+		"sentence": "The system will have the provision to enter any number of Syndrome, Clinical Examinations, Diagnosis, Lab Test, Drugs and Other Measures in any treatment level based on MSIU treatment master."
+	},	{
+		"sentence": "The system captures the thump impression available in each claim form, and needs to compare it with the same voucher numbers previous visits if available."
+	},	{
+		"sentence": "If the thump impression are mismatching for the same patient (Client / Partner) on same voucher the system would automatically make a count on it.",
+		"causality": {
+			"cause": "the thump impression are mismatching for the same patient (Client / Partner) on same voucher",
+			"effect": "the system would automatically make a count on it"
+		}
+	},	{
+		"sentence": "If the claim from same VSP having more than two times of Thump Impression mismatching, then the system should automatically produce a warning message and the same time the system should In-Activate the VSP.",
+		"causality": {
+			"cause": "the claim from same VSP having more than two times of Thump Impression mismatching",
+			"effect": "the system should automatically produce a warning message and the same time the system should In-Activate the VSP"
+		}
+	},	{
+		"sentence": "The authorized user can alter / amend the Claim if required."
+	},	{
+		"sentence": "While entering return vouchers details the system will check weather the returned voucher was sold to this particular Distributor or not.",
+		"causality": {
+			"cause": "entering return vouchers details",
+			"effect": "the system will check weather the returned voucher was sold to this particular Distributor or not"
+		}
+	},	{
+		"sentence": "If not the system won't accept those vouchers as return.",
+		"causality": {
+			"cause": "not",
+			"effect": "the system won't accept those vouchers as return"
+		}
+	},	{
+		"sentence": "The system has the provision to provide various analytical, medical, financial and statistical reports."
+	},	{
+		"sentence": "Such reports can be designed later."
+	}
+]

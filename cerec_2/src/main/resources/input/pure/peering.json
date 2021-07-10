@@ -1,0 +1,317 @@
+[
+	{
+		"sentence": "This document describes the requirements specification (SRS) for the software infrastructure (or product) that enables the internetworking of Content Delivery Networks (CDNs) through peering, henceforth termed as CDN peering, and provides an overall description of it."
+	},	{
+		"sentence": "It presents a means for distinct CDNs to coordinate and cooperate with other CDNs, by investigating and developing (a) models for effective internetworking between CDNs though peering; (b) protocols for service delivery in a cooperative environment of CDNs; (c) some concrete examples (technology trends) that exhibits the notion of content networking; and (d) policies for autonomic management of service level through resource negotiation in an on-demand basis."
+	},	{
+		"sentence": "Thus, this document provides a basis for evaluating the proposal for internetworking between CDNs."
+	},	{
+		"sentence": "This is the version 0.1 of the software requirements specification."
+	},	{
+		"sentence": "This document is written for the researchers, software developers, advanced practitioners, documentation writers, and users involved in CDN domain to initiation an open discussion for exploring development opportunities regarding the internetworking between CDNs."
+	},	{
+		"sentence": "Section 2 discusses the steps that are to be undertaken to bring-up or cease an internetworking arrangement between CDNs."
+	},	{
+		"sentence": "In the next section, system features with their functional requirements are presented to highlight the major services provided by the intended product."
+	},	{
+		"sentence": "Then the external interface requirements highlighting the logical characteristics of each interface between the software product and the users are discussed."
+	},	{
+		"sentence": "Finally, this specification is concluded with the reference documents on which this document is based on."
+	},	{
+		"sentence": "The final product enabling CDN peering assists in coordinated and cooperative content delivery via internetworking among distinct CDNs to allow providers to rapidly scale-out to meet both flash crowds and anticipated increases in demand, and remove the need for a single CDN to provision resources."
+	},	{
+		"sentence": "An ad-hoc or planned peering of CDNs requires fundamental research to be undertaken to address the core problems of measuring and disseminating load information, performing request assignment and redirection, enabling content replication and determining appropriate compensation among participants on a geographically distributed Internet scale."
+	},	{
+		"sentence": "In contrast to a single CDN, for which these issues are deeply interrelated and co-dependent, the main thrust for the final product enabling CDN peering is to consider them in a coordinated and cooperative manner among many peered CDNs, whilst satisfying the complex multi-dimensional constraints placed on each individual provider."
+	},	{
+		"sentence": "Each provider must ensure that their individual SLAs are met when serving content for its own customers to end users, while meeting any obligations it has made when participating in a group of many providers."
+	},	{
+		"sentence": "The users of the software infrastructure enabling CDN peering can be differentiated by using their membership and contributions to the system."
+	},	{
+		"sentence": "A given peering arrangement consists of explicit and implicit members."
+	},	{
+		"sentence": "Explicit members include the primary CDN, which is the initiator of a peering relationship, and any peering CDNs who cooperate for resource sharing."
+	},	{
+		"sentence": "Implicit members are content providers and end-users."
+	},	{
+		"sentence": "Implicit members are transparent to a peering arrangement but they share the benefit from it."
+	},	{
+		"sentence": "In addition, users can vary based on the purpose, size, scope and duration of peering."
+	},	{
+		"sentence": "For instance, a short-term peering arrangement is to be automated to react within a tight time frame?as it is unlikely that a human directed negotiation would occur quickly enough to satisfy the evolved niche."
+	},	{
+		"sentence": "On the other hand, establishment of a long-term peering arrangement calls for a human-directed agent to ensure that any resulting decisions comply with participating CDNs strategic goals."
+	},	{
+		"sentence": "Users can also be classified because of the preferential treatment that they may receive due to the policy that pertains to a particular provider's business logic.",
+		"causality": {
+			"cause": "the preferential treatment that they may receive due to the policy that pertains to a particular provider's business logic",
+			"effect": "Users can also be classified"
+		}
+	},	{
+		"sentence": "Moreover, individual users (or a group of users) can have dynamic QoS requirements depending on the situations that will result in customized content delivery."
+	},	{
+		"sentence": "Thus, users (or class of users) can be differentiated based on userdefined QoS specifications while accessing the service."
+	},	{
+		"sentence": "The product (i.e. prototype system) enabling CDN peering is expected to be deployed it in a realworld test bed such as PlanetLab for global testing, observations, and for performance evaluation."
+	},	{
+		"sentence": "In this regard, existing Web services technologies will be studied in detail to examine the feasibility of leveraging them."
+	},	{
+		"sentence": "A modular implementation stack could be developed on top of the existing standard application layer (e.g. Apache, Tomcat) and protocols (e.g. HTTP, CDI, HTPC)."
+	},	{
+		"sentence": "A modular implementation approach would be useful to perform testing on modules at different stages to ensure correct implementation."
+	},	{
+		"sentence": "It is anticipated that a cryptographically secure auction-based framework will be used to assist content replication among peered CDNs to allow incentives for all participants."
+	},	{
+		"sentence": "Load information could be measured and disseminated within individual CDNs and among other CDNs using distributed load indices such as Distributed Hash Table (DHT) or variations of it."
+	},	{
+		"sentence": "Request assignment and redirection could predominantly rely on DNS-level end-user assignment combined with a rudimentary request assignment policy such as weighted round-robin or least-loaded-first, which updates the DNS records to point to the most appropriate replica server of the peers."
+	},	{
+		"sentence": "The challenges in developing the product include virtualization of multiple providers and offloading end-user requests from the primary CDN provider to peers based on cost, performance and load."
+	},	{
+		"sentence": "Due to the proprietary nature of existing CDNs, limited information about response time or service cost is typically available from individual CDNs, and load balancing control is retained by an individual provider within its own Web servers."
+	},	{
+		"sentence": "Therefore, request-redirections must occur over distributed sets of Web servers belonging to multiple CDN providers, without the benefit of the full information available, as in the single provider case."
+	},	{
+		"sentence": "Moreover, an implementation model for the product enabling CDN peering could be based on a complex combination of attributes such as Web server responsiveness or load, expected network delay, or geographic location."
+	},	{
+		"sentence": "Several of these potential attributes vary over time and there is no single repository for listing the value of attributes such as geographic location or expected delay for all Internet-connected systems."
+	},	{
+		"sentence": "It is anticipated that the values used in a CDN peering implementation model are likely to be based on heuristics."
+	},	{
+		"sentence": "Along with the software product, a user manual would be written to help people understand the working methodology and usage of the developed prototype system."
+	},	{
+		"sentence": "It would be written for nontechnical individuals and the level of content or terminology would differ considerably from, for example, a System Administration Guide, which is more detailed and complex."
+	},	{
+		"sentence": "The user manual would follow common user documentation styles capturing purpose and scope of the product along with key system features and operations; step-by-step instructions for using the system including conventions, messaging structures, quick references, tips for errors and malfunctions; pointers to reference documents; and glossary of terms."
+	},	{
+		"sentence": "The product would build on leveraging existing systems."
+	},	{
+		"sentence": "In this regard, necessary inspirations could be obtained by analyzing related systems such as CoDeeN, Coral, Globule, and MotusNet.",
+		"causality": {
+			"cause": "necessary inspirations could be obtained",
+			"effect": "analyzing related systems such as CoDeeN, Coral, Globule, and MotusNet"
+		}
+	},	{
+		"sentence": "In particular, the design and implementation approach of MotusNet could be helpful to draw a clear guideline for developing the intended prototype."
+	},	{
+		"sentence": "The major services and functional requirements for the product can be illustrated by system features."
+	},	{
+		"sentence": "This section is organized by use cases for major system features."
+	},	{
+		"sentence": "In the following, necessary description is provided for each use cases in the system."
+	},	{
+		"sentence": "Each use case description provides information of the associated actors, triggering condition, preconditions, postconditions, response sequences, exceptions and functional requirements (assumptions)."
+	},	{
+		"sentence": "Being a major important section of the SRS, this section is expected to go through iterative improvement to make the most logical sense for the intended product."
+	},	{
+		"sentence": "This feature is associated with the registration of resource and service information of each CDN to its SR."
+	},	{
+		"sentence": "The use case for this feature is shown in Figure 2."
+	},	{
+		"sentence": "WS: Publishes its resource and service information to the SR."
+	},	{
+		"sentence": "SR: Registers available local resources at the CDN provider and updates them."
+	},	{
+		"sentence": "Mediator: Collects up-to-date resource information from SR."
+	},	{
+		"sentence": "Service registration is triggered when either one of the following occurs: (a) resources are available as a provider starts operating; (b) previously registered resource information needs to be updated; (c) available local resource information is required in the event of traffic surges; and (d) local and delegated external resource information is to be encapsulated in an SR instance included in an established peering arrangement.",
+		"causality": {
+			"cause": "(a) resources are available as a provider starts operating; (b) previously registered resource information needs to be updated; (c) available local resource information is required in the event of traffic surges; and (d) local and delegated external resource information is to be encapsulated in an SR instance included in an established peering arrangement",
+			"effect": "Service registration is triggered"
+		}
+	},	{
+		"sentence": "Available local resources of a CDN provider are detected along with their service information such as CPU, storage, upload and download rate, etc."
+	},	{
+		"sentence": "These resources could be provisioned and reserved to satisfy SLAs."
+	},	{
+		"sentence": "Resources are registered in the service registry and being updated in a regular basis."
+	},	{
+		"sentence": "If a resource fails, its service information is removed from SR and the resource ID counter is decremented.",
+		"causality": {
+			"cause": "a resource fails",
+			"effect": "its service information is removed from SR and the resource ID counter is decremented"
+		}
+	},	{
+		"sentence": "The format for service information description is defined."
+	},	{
+		"sentence": "The format for service information description is defined."
+	},	{
+		"sentence": "The interaction protocol between Web Server-SR, SR-mediator is defined."
+	},	{
+		"sentence": "Resource provisioning, delegation and reservation policies are in place."
+	},	{
+		"sentence": "There is an established norm that any resource failure will be reported."
+	},	{
+		"sentence": "The interaction protocol between Web Server-SR, SR-mediator is defined."
+	},	{
+		"sentence": "This feature relates to the initialization of peering between CDNs."
+	},	{
+		"sentence": "The use case for this feature is shown in Figure 3."
+	},	{
+		"sentence": "End-user: Requests for content."
+	},	{
+		"sentence": "Mediator: Receives initiation request from WS to trigger peering."
+	},	{
+		"sentence": "It is invoked when a (primary) CDN realizes that it cannot handle a part of the workload on its WS(s).",
+		"causality": {
+			"cause": "a (primary) CDN realizes that it cannot handle a part of the workload on its WS(s)",
+			"effect": "It is invoked"
+		}
+	},	{
+		"sentence": "The triggering condition considers the expected and unexpected load increases in the initiating (primary) CDN."
+	},	{
+		"sentence": "Exceptional circumstances such as flash crowds have occurred to place unanticipated load on CDN WSs."
+	},	{
+		"sentence": "An initialization request is sent to the mediator to trigger peering."
+	},	{
+		"sentence": "If the user requests experience service timeout (threshold), initiation request is cancelled.",
+		"causality": {
+			"cause": "the user requests experience service timeout (threshold)",
+			"effect": "initiation request is cancelled"
+		}
+	},	{
+		"sentence": "Malicious requests are detected and rejected."
+	},	{
+		"sentence": "Web servers have already replicated necessary content."
+	},	{
+		"sentence": "Both anticipated and unanticipated user requests (traffic) are considered."
+	},	{
+		"sentence": "The format for service information description is defined."
+	},	{
+		"sentence": "On receipt of the initialization request to trigger peering, the mediator of the primary CDN invokes negotiation.",
+		"causality": {
+			"cause": "receipt of the initialization request to trigger peering",
+			"effect": "the mediator of the primary CDN invokes negotiation"
+		}
+	},	{
+		"sentence": "Figure 4 shows use case for this feature."
+	},	{
+		"sentence": "SR: Sends resource and access information."
+	},	{
+		"sentence": "PR: Sends policy information for establishing negotiated relationships PA: Receives service requirements from the mediator."
+	},	{
+		"sentence": "Upon receiving the initialization request to trigger peering, the mediator generates service requirements and passes it to local PA.",
+		"causality": {
+			"cause": "receiving the initialization request to trigger peering",
+			"effect": "the mediator generates service requirements and passes it to local PA"
+		}
+	},	{
+		"sentence": "Initialization request is received."
+	},	{
+		"sentence": "Service requirements are generated and they are sent to the local PA."
+	},	{
+		"sentence": "If the user requests can not be accepted according the provider policies, service requirements are not passed to the local PA.",
+		"causality": {
+			"cause": "the user requests can not be accepted according the provider policies",
+			"effect": "service requirements are not passed to the local PA"
+		}
+	},	{
+		"sentence": "The format of service requirements is defined."
+	},	{
+		"sentence": "Mediator-SR, mediator-PR, mediator-PA interaction protocols are defined."
+	},	{
+		"sentence": "Mediator works in conjunction with the PA to establish negotiation."
+	},	{
+		"sentence": "The PA of a given primary CDN negotiates with PAs of the peers to perform external resource discovery."
+	},	{
+		"sentence": "Figure 5 shows the use case related to this feature."
+	},	{
+		"sentence": "External PA: Negotiates with the PA of the primary CDN."
+	},	{
+		"sentence": "PR: Receives negotiated policies from the local PA."
+	},	{
+		"sentence": "Local PA communicates with the PAs of peers to discover external resources."
+	},	{
+		"sentence": "Service requirements are received from the mediator."
+	},	{
+		"sentence": "Negotiation is performed and a peering arrangement is established through inter-PA communications."
+	},	{
+		"sentence": "If the user requests can not be accepted according the provider policies, service requirements are not passed to the local PA.",
+		"causality": {
+			"cause": "the user requests can not be accepted according the provider policies",
+			"effect": "service requirements are not passed to the local PA"
+		}
+	},	{
+		"sentence": "Interaction protocols between PAs are identified."
+	},	{
+		"sentence": "Malicious requests are identified and acted upon."
+	},	{
+		"sentence": "There are existing policies for long-term peering arrangement."
+	},	{
+		"sentence": "There is procedure to perform short-term negotiation."
+	},	{
+		"sentence": "This feature is responsible for the inter-CDN protocol configuration, resource initialization and for ensuring effective operations of the established peering arrangement."
+	},	{
+		"sentence": "The use case for this feature is shown in Figure 6."
+	},	{
+		"sentence": "External PA: Exchanges configurations and content availability information, and accepts requests to an optimal peer."
+	},	{
+		"sentence": "PR: Assists in enforcing negotiated policies."
+	},	{
+		"sentence": "Once policies are negotiated and a peering arrangement is established, PAs interact each other in the execution of common goal(s).",
+		"causality": {
+			"cause": "policies are negotiated and a peering arrangement is established",
+			"effect": "PAs interact each other in the execution of common goal(s)"
+		}
+	},	{
+		"sentence": "A peering arrangement is established."
+	},	{
+		"sentence": "Necessary functions policies are deployed and administration for effective operations."
+	},	{
+		"sentence": "If a peered CDN provider refuses to accept user requests, a given peering arrangement ceases.",
+		"causality": {
+			"cause": "a peered CDN provider refuses to accept user requests",
+			"effect": "a given peering arrangement ceases"
+		}
+	},	{
+		"sentence": "Negotiation is established between selected CDN peers."
+	},	{
+		"sentence": "Primary CDN has already acquired sufficient external resources."
+	},	{
+		"sentence": "Functional policies are identified and deployed."
+	},	{
+		"sentence": "Effective content delivery is ensured through SLA satisfaction."
+	},	{
+		"sentence": "There could be circumstances under which a given peering arrangement may need to disband or rearranges itself."
+	},	{
+		"sentence": "This feature is associated with the use case shown in Figure 7."
+	},	{
+		"sentence": "External PA: Interactions with local PA of the primary CDN."
+	},	{
+		"sentence": "Any of the termination condition holds."
+	},	{
+		"sentence": "There is an established peering arrangement."
+	},	{
+		"sentence": "A given peering arrangement is disband or it is re-arranged."
+	},	{
+		"sentence": "If there are exceptional circumstances such as natural disaster, theft, etc. for which any peer is unable to honor the negotiated relationships, a given peering arrangement is not disband or re-arranged and SLA conditions are bypassed.",
+		"causality": {
+			"cause": "there are exceptional circumstances such as natural disaster, theft, etc. for which any peer is unable to honor the negotiated relationships",
+			"effect": "a given peering arrangement is not disband or re-arranged and SLA conditions are bypassed"
+		}
+	},	{
+		"sentence": "Policies identifying the consequences of SLA violation are defined."
+	},	{
+		"sentence": "Policies are in place to perform renegotiation for problem resolution."
+	},	{
+		"sentence": "Policies are in place to perform renegotiation for problem resolution."
+	},	{
+		"sentence": "This section describes the logical characteristics of each interface between the intended software product and the users."
+	},	{
+		"sentence": "For user interface design, common GUI standards will be followed along with the presence of keyboard shortcuts, error message display standards etc., and standard buttons and functions (i.e. help) will appear on every screen."
+	},	{
+		"sentence": "Details of the user interface design are intended to be documented in a separate user interface specification."
+	},	{
+		"sentence": "As mentioned earlier, the intended product to exploit existing Web service technologies to leverage existing infrastructures through building an overlay."
+	},	{
+		"sentence": "The communication among software component would be performed through message passing over the IP network."
+	},	{
+		"sentence": "From a technical point of view, TCP/IP will be used as the transport protocol, where each CDN server establishes a TCP connection to the network elements using a well-known port number."
+	},	{
+		"sentence": "Messages can then be sent bi-directionally between the server and network elements."
+	},	{
+		"sentence": "All messages consist of a fixed length-header containing the total data length and a request followed by a reply or an acknowledgement."
+	},	{
+		"sentence": "Interaction among surrogates will be performed using HTTP or FTP."
+	}
+]

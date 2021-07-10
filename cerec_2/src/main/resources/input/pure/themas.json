@@ -1,0 +1,471 @@
+[
+	{
+		"sentence": "The following subsections of Section 1.0 provide an overview of the entire Software Requirements Specification."
+	},	{
+		"sentence": "This Software Requirements Specification (SRS) specifies the qualification requirements for The Energy Management System (THEMAS)."
+	},	{
+		"sentence": "It provides a technical description of all software requirements of the system, provides traceability of software capability requirements to the Statement of Work, and identifies external interfaces."
+	},	{
+		"sentence": "This document is intended for use by the Design Requirements team, Principle Software Architect, and other parties interested in the development and progression of THEMAS."
+	},	{
+		"sentence": "The scope of this document is confined to only the software requirements for the THEMAS system."
+	},	{
+		"sentence": "Only those conditions expressed with the imperative 'shall' are to be interp reted as binding requirements for this SRS."
+	},	{
+		"sentence": "This document provides a detailed definition of all requirements for the THEMAS system."
+	},	{
+		"sentence": "It does not provide a detailed definition of the exact systems that will interface with THEMAS."
+	},	{
+		"sentence": "The SRS shall give a prototype of a simulated thermostat for verification and validation of THEMAS reliability."
+	},	{
+		"sentence": "The requirements specified in this document are to be used as the basis for software design of the THEMAS system."
+	},	{
+		"sentence": "The following section lists acronyms and abbreviations and their meaning as used in this document: ANSI American National Standards Institute C Cooling DB Database DD Data Dictionary DFD Data Flow Diagram H Heating IEEE Institute of Electrical and Electronic Engineers LO Lower Overtemperature Value LT Lower Trigger Value OD Overtemperature Delta Value SDD Software Design Document SRS Software Requirements Specification T Current Temperature Value TD Trigger Delta Value THEMAS The Energy Management System TSET Current Temperature Setting UT Upper Trigger Value UO Upper Overtemperature Value."
+	},	{
+		"sentence": "The following documents shown form a part of this specification."
+	},	{
+		"sentence": "In the event of conflict between the documents referenced and the contents of this SRS, the contents of this document shall overrule all others, with the exception of the Statement of Work."
+	},	{
+		"sentence": "Statement of Work THEMAS_SOW_001 ANSI/IEE Guide to Software ANSI/IEEE STD 830-1984 Requirements Specification Technical society and technical association specifications are generally available for reference from libraries."
+	},	{
+		"sentence": "Copies of other specifications may be obtained from Barry Scott, THEMAS project Manager."
+	},	{
+		"sentence": "This document is prepared in accordance with the American National Standards Institute (ANSI) / Institute of Electrical and Electronics Engineers (IEEE) Guide to Software Requirements Specifications, ANSI/IEEE STD 830 -1984."
+	},	{
+		"sentence": "Section 2.0 of this document gives a general description of the THEMAS system."
+	},	{
+		"sentence": "It provides product perspectives, product functions, user characteristics, general constraints, and assumptions and dependencies of the system."
+	},	{
+		"sentence": "Section 3.0 contains all the details the Design Requirements team needs to create a design."
+	},	{
+		"sentence": "It will contain functional and performance requirements, design constraints, attributes and external interface requirements for the THEMAS system."
+	},	{
+		"sentence": "Appendix A contains the Dataflow Diagrams."
+	},	{
+		"sentence": "Appendix B contains the Traceability Matrix."
+	},	{
+		"sentence": "Appendix C contains the Data Dictionary."
+	},	{
+		"sentence": "This section of this SRS describes the general factors that effect the THEMAS system and its requirements."
+	},	{
+		"sentence": "This section does not state specific requirements, it only makes these requirements easier understood."
+	},	{
+		"sentence": "The THEMAS system is a system that operates independent of any other system, or any components of the heating and cooling system to which it is attached."
+	},	{
+		"sentence": "The THEMAS system, however, is composed mainly of a hardware and software portion."
+	},	{
+		"sentence": "This SRS only specifies the requirements dealing with the software portion of the system."
+	},	{
+		"sentence": "If assumptions or dependencies about the hardware were made, they are stated in this section of the SRS.",
+		"causality": {
+			"cause": "assumptions or dependencies about the hardware were made",
+			"effect": "they are stated in this section of the SRS"
+		}
+	},	{
+		"sentence": "The THEMAS system is divided into four major sections: Monitor Temperature, Determine Utilization, Initialize System, and System Reports."
+	},	{
+		"sentence": "All four sections have an associated software configuration item; all except the System Reports have an associated hardware configuration item."
+	},	{
+		"sentence": "The hardware requirements are contained in the system specification."
+	},	{
+		"sentence": "The functions of the software for the system are contained in the following paragraphs."
+	},	{
+		"sentence": "The monitor temperature function receives the valid temperature and system parameters."
+	},	{
+		"sentence": "The function then goes through the process of determining temperature status."
+	},	{
+		"sentence": "After this process is done, either temperature limit is exceeded or the temperature change is requested."
+	},	{
+		"sentence": "If the temperature change is requested, then the determine heating/cooling mode process is activated and makes a heating/cooling request.",
+		"causality": {
+			"cause": "the temperature change is requested",
+			"effect": "the determine heating/cooling mode process is activated and makes a heating/cooling request"
+		}
+	},	{
+		"sentence": "Some other processes that help the monitor temperature function are: validate temperature, change thermostat setting, generate alarm, and system initialization."
+	},	{
+		"sentence": "The determine utilization function receives the heating/cooling request and utilization parameters."
+	},	{
+		"sentence": "The function then processes the status of all heating/cooling units and sends out either unit unavailable or heating/cooling unit needed."
+	},	{
+		"sentence": "The function generates either a unit unavailable event which goes into the System Reports function or it generates a heating/cooling signal to turn on/off the units."
+	},	{
+		"sentence": "The Monitor Temperature and Initialize System functions help the determine utilization to do its processes."
+	},	{
+		"sentence": "The initialize system function receives the initialization data for the THEMAS system."
+	},	{
+		"sentence": "The processes that are associated with it are: load heating/cooling unit definitions, turn off all heating/cooling units, load th ermostat definitions, load utilization parameters, set trigger values, set overtemperature values, and establish valid temperature range."
+	},	{
+		"sentence": "The outgoing information that starts the entire THEMAS system is: clear all heating/cooling signals, send thermostat definitions, send utilization parameters, send trigger values, send overtemperature values, and send valid temperature range."
+	},	{
+		"sentence": "The system reports function receives event data from the THEMAS system."
+	},	{
+		"sentence": "This function is a database that stores all the events in the THEMAS system."
+	},	{
+		"sentence": "This function is mainly for the use of the supervisor of the THEMAS system to maintain an efficient heating and cooling system."
+	},	{
+		"sentence": "The only process that interacts with the system reports function is the generate event data process."
+	},	{
+		"sentence": "This system is intended to be used by people that maintain the heating and cooling systems in a building."
+	},	{
+		"sentence": "The system should not need intervention from outside users other than the supervisor to maintain operation of THEMAS."
+	},	{
+		"sentence": "The system should provide warnings to the supervisor about faulty temperatures."
+	},	{
+		"sentence": "The displaying of the current status of the system to the supervisor should not contain excessive information which could confuse the supervisor."
+	},	{
+		"sentence": "The system should provide information in the form of reports to the supervisor so that the system can be run efficiently."
+	},	{
+		"sentence": "The general constraints of the THEMAS system focus on the functionality provided by the external devices connected to it."
+	},	{
+		"sentence": "The thermostats shall only provide temperature values and temperature settings."
+	},	{
+		"sentence": "The heating and cooling units provide no feedback to the THEMAS system."
+	},	{
+		"sentence": "When a signal is sent to a heating or cooling unit, no signal shall be available to allow the THEMAS system to determine if the signal sent to the unit was realized by the unit.",
+		"causality": {
+			"cause": "a signal is sent to a heating or cooling unit",
+			"effect": "no signal shall be available to allow the THEMAS system to determine if the signal sent to the unit was realized by the unit"
+		}
+	},	{
+		"sentence": "In developing the requirements for the THEMAS system, several assumptions have been made about the thermostat hardware and the heating/cooling hardware."
+	},	{
+		"sentence": "These assumptions are stated in the following paragraphs."
+	},	{
+		"sentence": "The THEMAS system shall be designed to run on the Microsoft Windows NT operating system."
+	},	{
+		"sentence": "All the internal process communications shall be designed to operate on this operating system."
+	},	{
+		"sentence": "Any communication with the thermostats and heating and cooling units shall be done through the interface to these units."
+	},	{
+		"sentence": "These interfaces shall run on this operating system as well."
+	},	{
+		"sentence": "It is assumed that the thermostat is capable of returning the current temperature and the current desired temperature setting to the THEMAS system."
+	},	{
+		"sentence": "The thermostat is constantly returning these values with no real time delay in between the thermostat and the THEMAS system."
+	},	{
+		"sentence": "The thermostat also has the capability of being set and controlled by a user of the THEMAS system."
+	},	{
+		"sentence": "All data sent by the thermostat is in the correct format for the THEMAS system to use."
+	},	{
+		"sentence": "It is assumed that the heating/cooling unit is incapable of returning its current off/on status to the THEMAS system."
+	},	{
+		"sentence": "The heating/cooling unit has no real time delay when sending these statuses to the THEMAS system."
+	},	{
+		"sentence": "The heating/cooling unit shall have the capability of being turned off and on by the supervisor of the THEMAS system."
+	},	{
+		"sentence": "This section is subdivided into ten main subsections: Initialize Operational Parameters, Initialize System, Validate Temperature, Monitor Temperature, Determine Utilization, Generate H/C Signal, Generate Alarm Data, Generate Event Data, Change Thermostat Setting, and Generate Reports."
+	},	{
+		"sentence": "Each subsection describes the software requirement for that individual software component of the THEMAS system."
+	},	{
+		"sentence": "The following sections describe the Initialize System component of the THEMAS system."
+	},	{
+		"sentence": "The THEMAS system shall control the heating and cooling units that are defined as part of the THEMAS system."
+	},	{
+		"sentence": "The definitions of the individual heating and cooling systems reside in an initialization file."
+	},	{
+		"sentence": "The system shall read this file and the definitions shall be derived from the initialization data in the file."
+	},	{
+		"sentence": "Initialization Data."
+	},	{
+		"sentence": "The THEMAS system shall use the information contained in the initialization data file to determine which heating and cooling units are part of the THEMAS system."
+	},	{
+		"sentence": "There is one heating and cooling unit that corresponds to one thermostat in each of four quadrants on each of three floors of the office building."
+	},	{
+		"sentence": "Each thermostat shall have a unique identifier by which that thermostat is identified in the THEMAS system."
+	},	{
+		"sentence": "This procedure will load these definitions into the THEMAS software."
+	},	{
+		"sentence": "Initialization Data."
+	},	{
+		"sentence": "Each quadrant of each floor shall have a thermostat which is to be used to provide temperature data to the THEMAS system."
+	},	{
+		"sentence": "The initialization file shall contain a unique identifier for each thermostat that the system is to monitor."
+	},	{
+		"sentence": "These identifiers shall be read from the initialization file and loaded into the THEMAS system during the initialization process."
+	},	{
+		"sentence": "There shall be a maximum number of heating or cooling units that can be on at any given time."
+	},	{
+		"sentence": "This procedure loads the maximum number of concurrently running units allowed."
+	},	{
+		"sentence": "The maximum number of heating or cooling units that can run concurrently shall reside in an initialization file."
+	},	{
+		"sentence": "The maximum number of concurrently running units shall be read from the initialization file and stored in the THEMAS system."
+	},	{
+		"sentence": "The trigger value is used in combination with the current temperature to determine when a heating or cooling unit shall be turned on or off."
+	},	{
+		"sentence": "The trigger values shall reside in an initialization file."
+	},	{
+		"sentence": "This procedure shall read the initialization file and establish the trigger value from the data in that file."
+	},	{
+		"sentence": "The THEMAS system shall ensure the temperature reported by a given thermostat shall not exceed a maximum deviation value of 3 degrees Fahrenheit."
+	},	{
+		"sentence": "The overtemperature values shall reside in an initialization file."
+	},	{
+		"sentence": "This procedure shall read the initialization file and establish the overtemperature value from the data in that file."
+	},	{
+		"sentence": "The THEMAS system shall only respond to temperatures that are within a reasonable value."
+	},	{
+		"sentence": "The valid temperature range value shall reside in an initialization file."
+	},	{
+		"sentence": "This procedure shall read the initialization file and establish the valid temperature range from the data in it."
+	},	{
+		"sentence": "When the THEMAS system is initialized, it shall first turn off all the heating and cooling units.",
+		"causality": {
+			"cause": "the THEMAS system is initialized",
+			"effect": "it shall first turn off all the heating and cooling units"
+		}
+	},	{
+		"sentence": "Then, it shall check all the thermostats and determine if any thermostat's settings require a heating or cooling unit to be turned on back on."
+	},	{
+		"sentence": "This process shall first determine a known state of all the heating and cooling units by issuing a request to turn off all the units."
+	},	{
+		"sentence": "It shall then read the current temperature values and current temperature settings of each thermostat."
+	},	{
+		"sentence": "If the settings reflect a need for a heating or cooling unit to be turned on, the process shall issue a request to turn on the appropriate unit.",
+		"causality": {
+			"cause": "the settings reflect a need for a heating or cooling unit to be turned on",
+			"effect": "the process shall issue a request to turn on the appropriate unit"
+		}
+	},	{
+		"sentence": "This determination shall be made in accordance with the rules outlined in section 3."
+	},	{
+		"sentence": "The THEMAS system shall only respond to temperatures from the thermostats that are within the specified valid range."
+	},	{
+		"sentence": "Two types of temperature data shall be recognized from the thermostats: 1) the temperature setting and 2) the current temperature."
+	},	{
+		"sentence": "This module shall process both types of data."
+	},	{
+		"sentence": "A current temperature value that is received from an individual thermostat shall be compared to the valid temperature range values."
+	},	{
+		"sentence": "If the current temperature value is strictly less than the lower value of the valid temperature range or the received temperature value is strictly greater than the upper value of the valid temperature range, then the THEMAS system shall identify the current temperature value as an invalid temperature and shall output an invalid temperature status.",
+		"causality": {
+			"cause": "the current temperature value is strictly less than the lower value of the valid temperature range or the received temperature value is strictly greater than the upper value of the valid temperature range",
+			"effect": "the THEMAS system shall identify the current temperature value as an invalid temperature and shall output an invalid temperature status"
+		}
+	},	{
+		"sentence": "Otherwise, the THEMAS system shall output a valid temperature status."
+	},	{
+		"sentence": "A temperature setting value that is received from an individual thermostat shall be compared to the valid temperature range values."
+	},	{
+		"sentence": "If the temperature setting value is strictly less than the lower value of the valid temperature range or the temperature setting value is strictly greater than the upper value of the valid temperature range, then the THEMAS system shall identify the temperature setting as an invalid temperature and shall output an invalid temperature status.",
+		"causality": {
+			"cause": "the temperature setting value is strictly less than the lower value of the valid temperature range or the temperature setting value is strictly greater than the upper value of the valid temperature range",
+			"effect": "the THEMAS system shall identify the temperature setting as an invalid temperature and shall output an invalid temperature status"
+		}
+	},	{
+		"sentence": "Otherwise, the THEMAS system shall realize the value for that thermostat's temperature setting."
+	},	{
+		"sentence": "The following sections describe the Monitor Temperature component of the THEMAS system."
+	},	{
+		"sentence": "The THEMAS system shall determine wh en a reported temperature or a changed temperature setting exceeds the limits set by the overtemperature values."
+	},	{
+		"sentence": "Temperatures that exceed the overtemperature limits shall be reported as such."
+	},	{
+		"sentence": "Temperatures that do not exceed these limits shall be output for subsequent processing."
+	},	{
+		"sentence": "Valid Temperatures Trigger Values Overtemp Values."
+	},	{
+		"sentence": "The THEMAS system shall compare the reported temperature value to the temperature setting and detect when the temperature value exceeds the specified limits."
+	},	{
+		"sentence": "To clarify these conditions, the following definitions will be used."
+	},	{
+		"sentence": "In this case this process shall output the condition of the temperature limit having been exceeded."
+	},	{
+		"sentence": "If LO = T = UO, then this process shall output the temperature status.",
+		"causality": {
+			"cause": "LO = T = UO",
+			"effect": "this process shall output the temperature status"
+		}
+	},	{
+		"sentence": "Temperature Trigger Exceeded Temperature Limit Exceeded."
+	},	{
+		"sentence": "When the current temperature value exceeds the current temperature setting by a pre -defined amount, the THEMAS system shall activate the appropriate heating or cooling unit.",
+		"causality": {
+			"cause": "the current temperature value exceeds the current temperature setting by a pre -defined amount",
+			"effect": "the THEMAS system shall activate the appropriate heating or cooling unit"
+		}
+	},	{
+		"sentence": "There are two conditions for each individual thermostat that shall be tested for: 1) the thermostat's settings are satisfied and 2) the thermostat's temperature indicates it requires a heating or cooling unit to be turned on."
+	},	{
+		"sentence": "To clarify these conditions, the following definitions will be used: LT : Lower Trigger Value = TSET - TD UT : Upper Trigger Value = TSET + TD Condition 1: LT = T = UT This condition indicates the thermostat's current temperature setting is satisfied."
+	},	{
+		"sentence": "If this condition is true, then the module shall output a request to turn off both the heating unit and the cooling unit.",
+		"causality": {
+			"cause": "this condition is true",
+			"effect": "the module shall output a request to turn off both the heating unit and the cooling unit"
+		}
+	},	{
+		"sentence": "Condition 2: LO = LT or UT T = UO This condition the need for a heating or cooling unit to be turned on."
+	},	{
+		"sentence": "If this condition is true, then this module shall output a request to turn on the heating unit if LO = T LT or the cooling unit if UT T = UO.",
+		"causality": {
+			"cause": "this condition is true",
+			"effect": "this module shall output a request to turn on the heating unit if LO = T LT or the cooling unit if UT T = UO"
+		}
+	},	{
+		"sentence": "The THEMAS system shall control each of the heating and cooling units that are defined for the system."
+	},	{
+		"sentence": "The THEMAS system shall limit the number of heating or cooling units t hat may be running simultaneously."
+	},	{
+		"sentence": "The THEMAS system shall maintain the ON/OFF status of each heating and cooling unit."
+	},	{
+		"sentence": "When a request to turn on or off a heating or cooling unit, the following processing will occur.",
+		"causality": {
+			"cause": "a request to turn on or off a heating or cooling unit",
+			"effect": "the following processing will occur"
+		}
+	},	{
+		"sentence": "When a request to turn on a heating or cooling unit is received, the system shall determine if the request can be honored.",
+		"causality": {
+			"cause": "a request to turn on a heating or cooling unit is received",
+			"effect": "the system shall determine if the request can be honored"
+		}
+	},	{
+		"sentence": "If the maximum number of heating or cooling units is already running, the request will be added to a LIFO queue.",
+		"causality": {
+			"cause": "the maximum number of heating or cooling units is already running",
+			"effect": "the request will be added to a LIFO queue"
+		}
+	},	{
+		"sentence": "If the maximum number of heating or cooling units is not running, this process will generate a request to turn on the requested unit.",
+		"causality": {
+			"cause": "the maximum number of heating or cooling units is not running",
+			"effect": "this process will generate a request to turn on the requested unit"
+		}
+	},	{
+		"sentence": "When a request to turn off a heating or cooling unit is received, this process shall check the queue of waiting heating and cooling requests.",
+		"causality": {
+			"cause": "a request to turn off a heating or cooling unit is received",
+			"effect": "this process shall check the queue of waiting heating and cooling requests"
+		}
+	},	{
+		"sentence": "If the queue is not empty, this process shall remove one request from the LIFO queue and check the current state of the thermostat for which the queued request was made.",
+		"causality": {
+			"cause": "the queue is not empty",
+			"effect": "this process shall remove one request from the LIFO queue and check the current state of the thermostat for which the queued request was made"
+		}
+	},	{
+		"sentence": "If that thermostat still needs a heating or cooling unit turned on, this process shall submit a request to turn that unit on.",
+		"causality": {
+			"cause": "that thermostat still needs a heating or cooling unit turned on",
+			"effect": "this process shall submit a request to turn that unit on"
+		}
+	},	{
+		"sentence": "Unit Unavailable H/C ON/OFF Request."
+	},	{
+		"sentence": "When a request for a heating unit or cooling to be turned is denied, an event shall be generated and the THEMAS system shall record that event.",
+		"causality": {
+			"cause": "a request for a heating unit or cooling to be turned is denied",
+			"effect": "an event shall be generated and the THEMAS system shall record that event"
+		}
+	},	{
+		"sentence": "The information in these events will be used for creating statistical reports."
+	},	{
+		"sentence": "This procedure shall realize the thermostat and heating or cooling information and use this information to generate a specific system event."
+	},	{
+		"sentence": "This system event shall consist of a description of the event type (a request denied event), a designation of the thermostat that made the request, and a designation of the heating or cooling unit that was not turned on."
+	},	{
+		"sentence": "The THEMAS system shall control the heating and cooling units that are designated as part of the THEMAS system."
+	},	{
+		"sentence": "When a request to turn on or off a heating or cooling unit is made, this process shall generate the appropriate request to carry out that request.",
+		"causality": {
+			"cause": "a request to turn on or off a heating or cooling unit is made",
+			"effect": "this process shall generate the appropriate request to carry out that request"
+		}
+	},	{
+		"sentence": "This request shall include the designation of the heating or cooling unit and a flag to indicate whether that unit is to be turned on or off."
+	},	{
+		"sentence": "Approved H/C Request."
+	},	{
+		"sentence": "Once a request to turn on or off a heating or cooling unit, the THEMAS system shall provide the necessary control signal for the unit.",
+		"causality": {
+			"cause": "a request to turn on or off a heating or cooling unit",
+			"effect": "the THEMAS system shall provide the necessary control signal for the unit"
+		}
+	},	{
+		"sentence": "This control signal shall also provide an indication of the unit's status at the requesting thermostat."
+	},	{
+		"sentence": "This process shall recognize the values for the requested heating or cooling unit and the ON or OFF status that is being requested."
+	},	{
+		"sentence": "The necessary signal to the heating or cooling unit will be generated."
+	},	{
+		"sentence": "Since the interface to control the units has not been defined, the part of this process that will issue the signal is designated as TBD(to be determined)."
+	},	{
+		"sentence": "In order to provide an indication of the status of the heating or cooling unit back to the requesting thermostat, this procedure shall output the status information of the heating or cooling unit."
+	},	{
+		"sentence": "In order to provide an operational history and statistical reports, this process shall generate an event each time a change is made to the status of a heating or cooling unit."
+	},	{
+		"sentence": "This event shall contain the identification of the heating or cooling unit whose status is being changed."
+	},	{
+		"sentence": "Heating Unit Signal Cooling Unit Signal Unit Status System Events."
+	},	{
+		"sentence": "There are two events that shall result in an alarm condition: 1) an invalid temperature value is reported from a thermostat, or 2) the reported temperature has exceeded the defined limits.",
+		"causality": {
+			"cause": "1) an invalid temperature value is reported from a thermostat, or 2) the reported temperature has exceeded the defined limits",
+			"effect": "an alarm condition"
+		}
+	},	{
+		"sentence": "This process shall determine which alarm event is to be generated."
+	},	{
+		"sentence": "When the THEMAS system detects a request for an alarm, this process shall detect which of the two alarms are being requested.",
+		"causality": {
+			"cause": "the THEMAS system detects a request for an alarm",
+			"effect": "this process shall detect which of the two alarms are being requested"
+		}
+	},	{
+		"sentence": "If the system detects an invalid temperature, this process shall output a continuous series of alternating 500 Hz and 700 Hz beeps on the supervisor's computer.",
+		"causality": {
+			"cause": "the system detects an invalid temperature",
+			"effect": "this process shall output a continuous series of alternating 500 Hz and 700 Hz beeps on the supervisor's computer"
+		}
+	},	{
+		"sentence": "Each beep shall have a three - quarter second duration."
+	},	{
+		"sentence": "This series of beeps shall continue until the supervisor manually resets the alarm through the supervisor's interface window."
+	},	{
+		"sentence": "If the system detects a temperature limit has been exceeded, this process shall output a continuous series of alternating 1000 Hz and 1500 Hz beeps on the supervisor's computer.",
+		"causality": {
+			"cause": "the system detects a temperature limit has been exceeded",
+			"effect": "this process shall output a continuous series of alternating 1000 Hz and 1500 Hz beeps on the supervisor's computer"
+		}
+	},	{
+		"sentence": "Each beep shall have a one-half second duration."
+	},	{
+		"sentence": "This series of beeps shall continue until the supervisor manually resets the alarm through the supervisor's interface window."
+	},	{
+		"sentence": "Each time an alarm is requested, an alarm event shall be recorded.",
+		"causality": {
+			"cause": "an alarm is requested",
+			"effect": "an alarm event shall be recorded"
+		}
+	},	{
+		"sentence": "This event shall be used to provide operational and statistical reports about the system."
+	},	{
+		"sentence": "For each event that is generated, the THEMAS system shall identify each event and generate the appropriate event data.",
+		"causality": {
+			"cause": "event that is generated",
+			"effect": "the THEMAS system shall identify each event and generate the appropriate event data"
+		}
+	},	{
+		"sentence": "Alarm Events System Events Denied H/C Request."
+	},	{
+		"sentence": "When an event occurs, the THEMAS system shall identify the event type and format an appropriate event message.",
+		"causality": {
+			"cause": "an event occurs",
+			"effect": "the THEMAS system shall identify the event type and format an appropriate event message"
+		}
+	},	{
+		"sentence": "The THEMAS system shall record each event by a description and the current system time for that event."
+	},	{
+		"sentence": "This information shall be recorded in a Microsoft Access database that shall reside on the supervisor's computer."
+	},	{
+		"sentence": "The THEMAS system shall provide the supervisor a mechanism to change the temperature setting of any of the thermostats in the system."
+	},	{
+		"sentence": "The supervisor's interface shall display the available thermostats and their individual current temperature settings."
+	},	{
+		"sentence": "The supervisor shall be able to select one of the thermostats and select a value for the current temperature from a list of valid temperatures."
+	},	{
+		"sentence": "The THEMAS shall provide the ability for the supervisor to select between two different types of reports: 1) the operational history of the THEMAS system for the past twelve months and 2) a statistical summary for any selected mont h."
+	}
+]

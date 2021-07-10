@@ -1,0 +1,569 @@
+[
+	{
+		"sentence": "This document includes software requirements for KeePass Password Safe, release number 1.10."
+	},	{
+		"sentence": "KeePass Password Safe is an OSI Certified Open Source Software distributed under the terms of the GNU General Public License Version 2 or under."
+	},	{
+		"sentence": "The system gives resolution to memorizing passwords problem."
+	},	{
+		"sentence": "Its purpose is to keep all of the user's passwords, data, email accounts, usernames and URLs stored in a very secure, encrypted database, protected by a Master Password."
+	},	{
+		"sentence": "The system is very small so it can be easily transferred from one computer to another."
+	},	{
+		"sentence": "It provides several functionalities on the already encrypted data and the new ones to be inserted."
+	},	{
+		"sentence": "The database produced, is protected by a Master Password only known by its inventor with no backup if lost."
+	},	{
+		"sentence": "When writing this document it was inherited that all requirements have the same priority."
+	},	{
+		"sentence": "First there is presented an overall view about KeePass and then all features and functions are analyzed in detail."
+	},	{
+		"sentence": "KeePass Password Safe is a small system that can be easily transferred from computer to computer by a simple USB stick."
+	},	{
+		"sentence": "Its purpose is to solve a problem that really bothers many people today when they have to choose from memorizing a lot of passwords to be secure or to use every time the same one so they won't forget it but risk be found out by others."
+	},	{
+		"sentence": "So it provides you a very secure, encrypted database where you can keep inside all your passwords, usernames, email accounts, URLs, notes without any risk for others to find them."
+	},	{
+		"sentence": "That is because KeePass Password Safe can lock every database with only one Master Password and/or key file."
+	},	{
+		"sentence": "There are no duplicates, anywhere in your computer, of this Master Password and/or key file so in case of lost database cannot be opened by anyone."
+	},	{
+		"sentence": "Not even by you and that is because there is no recovery password or back door."
+	},	{
+		"sentence": "KeePass Password Safe beside security also provides you with several functionalities in order to keep your database organized and up to date."
+	},	{
+		"sentence": "Those are analyzed in the following pages."
+	},	{
+		"sentence": "More about KeePass you can find out at http://keepass.info/."
+	},	{
+		"sentence": "KeePass consists of a database which contains data for one or more users."
+	},	{
+		"sentence": "Each user's data are divided into groups and subgroups so that they are organized in a form that serves right the user."
+	},	{
+		"sentence": "Every user has a unique Master Key which can be simple or composite and its combination opens uniquely the database."
+	},	{
+		"sentence": "If lost there is no recovery.",
+		"causality": {
+			"cause": "lost",
+			"effect": "no recovery"
+		}
+	},	{
+		"sentence": "Groups and subgroups contain entries with usernames, passwords URLs etc that can be sent or copied to websites, application and accounts."
+	},	{
+		"sentence": "There is also the ability for a onetime key creation to be used once in a transaction without the risk of reused by others for any reason."
+	},	{
+		"sentence": "In the diagram below there are the main components of the system, subsystem interconnections and external interfaces to help you understand the main idea of KeePass."
+	},	{
+		"sentence": "All of them are analyzed with more details in this document."
+	},	{
+		"sentence": "KeePass should run on Operating Systems: WINE, 32-bit MS Windows (95/98), 32-bit MS Windows (NT/2000/XP), All 32-bit MS Windows (95/98/NT/2000/XP),Win2K, WinXP, Microsoft Windows Server 2003."
+	},	{
+		"sentence": "KeePass should run perfectly on older releases without any features limitations or data loss."
+	},	{
+		"sentence": "System features are organized by use cases and functional hierarchy so that the main functions of the system will be understandable."
+	},	{
+		"sentence": "This feature provides the ability to create a new database."
+	},	{
+		"sentence": "It is the first thing a user must do to begin using KeePass."
+	},	{
+		"sentence": "Its main function is the determination of the master password that will unlock the database from now on."
+	},	{
+		"sentence": "KeePass must be downloaded and installed."
+	},	{
+		"sentence": "Master Password has no limits in length."
+	},	{
+		"sentence": "A whole sentence can be used with more than 100 characters."
+	},	{
+		"sentence": "This feature allows the user to open an existing database."
+	},	{
+		"sentence": "When choosing to open a database a user is transferred to his documents where he navigates to find the database he wants.",
+		"causality": {
+			"cause": "choosing to open a database",
+			"effect": "a user is transferred to his documents where he navigates to find the database he wants"
+		}
+	},	{
+		"sentence": "When the database is found, the master password is wanted so that the database will be unlocked.",
+		"causality": {
+			"cause": "the database is found",
+			"effect": "the master password is wanted so that the database will be unlocked"
+		}
+	},	{
+		"sentence": "Once this is done the user is free to access his data.",
+		"causality": {
+			"cause": "this is done",
+			"effect": "the user is free to access his data"
+		}
+	},	{
+		"sentence": "Folder selected must be of type the database can read and that is name.kdb."
+	},	{
+		"sentence": "This feature allows the user to save any changes or updates he has performed to his database."
+	},	{
+		"sentence": "When a database is opened, the user can access his passwords, organize them into new groups and subgroups, delete and add entries and so much more.",
+		"causality": {
+			"cause": "a database is opened",
+			"effect": "the user can access his passwords, organize them into new groups and subgroups, delete and add entries and so much more"
+		}
+	},	{
+		"sentence": "But when it is time for the database to close or during his working on the database, he can save the changes made.",
+		"causality": {
+			"cause": "it is time for the database to close or during his working on the database",
+			"effect": "he can save the changes made"
+		}
+	},	{
+		"sentence": "Databases must have different names or else the previews one will be replace if selected."
+	},	{
+		"sentence": "This feature allows user to print a selection of data that are stored in the database."
+	},	{
+		"sentence": "While working on the database, the user has the option to print data from his database.",
+		"causality": {
+			"cause": "working on the database",
+			"effect": "the user has the option to print data from his database"
+		}
+	},	{
+		"sentence": "This can be done by selecting print."
+	},	{
+		"sentence": "When this happens, a list of data types that can be printed are shown and the user can select the data to be printed.",
+		"causality": {
+			"cause": "this happens",
+			"effect": "a list of data types that can be printed are shown and the user can select the data to be printed"
+		}
+	},	{
+		"sentence": "More specifically fields that can be selected for printing are: Backup entries, which contain entries in the back up group, password groups, group tree, title, username, password, URL, notes, creation time, last access, last modification, expires, icon, UUID and attachment."
+	},	{
+		"sentence": "User selects some more fields and/or unselects some others."
+	},	{
+		"sentence": "There must be entries in the database in order for them to be printed."
+	},	{
+		"sentence": "This feature allows user to search for keywords in his database."
+	},	{
+		"sentence": "There is the ability to search in the database for usernames, groups, passwords, URLs, notes and titles."
+	},	{
+		"sentence": "This is very useful when the user needs to find out very quickly which password is required in one account or what username he has put on another account."
+	},	{
+		"sentence": "It is not necessary to write in the search field all characters."
+	},	{
+		"sentence": "By writing just one character the database will present all data which contains it or are related with it."
+	},	{
+		"sentence": "All data related to the word must be shown."
+	},	{
+		"sentence": "For example if user types abc and abc is part of a password and of a username, both entries must be shown.",
+		"causality": {
+			"cause": "user types abc and abc is part of a password and of a username",
+			"effect": "both entries must be shown"
+		}
+	},	{
+		"sentence": "This feature is used to keep data organized in categories for easier access."
+	},	{
+		"sentence": "There is the ability to organize data into groups and subgroups."
+	},	{
+		"sentence": "The user can create a new group or subgroups into an existing group."
+	},	{
+		"sentence": "When creating a group / subgroup the user must select a name and then he can add entries into it.",
+		"causality": {
+			"cause": "creating a group / subgroup",
+			"effect": "the user must select a name and then he can add entries into it"
+		}
+	},	{
+		"sentence": "Data Flow."
+	},	{
+		"sentence": "A name is required in order for the new group / subgroup to be created."
+	},	{
+		"sentence": "A subgroup cannot be created when no group is selected.",
+		"causality": {
+			"cause": "no group is selected",
+			"effect": "A subgroup cannot be created"
+		}
+	},	{
+		"sentence": "This feature allows user to change a name given to a group / subgroup."
+	},	{
+		"sentence": "When user wants to change a group or subgroup's name he has the ability to do that by modifying it.",
+		"causality": {
+			"cause": "user wants to change a group or subgroup's name",
+			"effect": "he has the ability to do that by modifying it"
+		}
+	},	{
+		"sentence": "A name is required in order for the group / subgroup to be renamed."
+	},	{
+		"sentence": "This feature allows the user to delete a group / subgroup."
+	},	{
+		"sentence": "When a user wants to delete an existing group / subgroup he can do this by selecting Delete group / subgroup from the edit menu.",
+		"causality": {
+			"cause": "a user wants to delete an existing group / subgroup",
+			"effect": "he can do this by selecting Delete group / subgroup from the edit menu"
+		}
+	},	{
+		"sentence": "In order for that to happen, he must have chosen first a group / subgroup."
+	},	{
+		"sentence": "This feature allows user to find data into a specific group / subgroup."
+	},	{
+		"sentence": "The user selects a group / subgroup and then he chooses �find in this group� from file menu."
+	},	{
+		"sentence": "Then a window appears which prompts the user to write a sequence of characters (letters and numbers) from one character to 200 (or more)."
+	},	{
+		"sentence": "After that a menu of options to choose from appears and the user can select to search for: title, user name, password, URL, notes, group name."
+	},	{
+		"sentence": "Search results appear in the main window."
+	},	{
+		"sentence": "In order to find something in a group a word must be placed in the find field.",
+		"causality": {
+			"cause": "a word must be placed in the find field",
+			"effect": "find something in a group"
+		}
+	},	{
+		"sentence": "This feature adds a new entry on the database."
+	},	{
+		"sentence": "The user can add a new entry on the database by clicking add entry on the main menu."
+	},	{
+		"sentence": "When he does this, a window opens which is actually a form.",
+		"causality": {
+			"cause": "he does this",
+			"effect": "a window opens which is actually a form"
+		}
+	},	{
+		"sentence": "In this form the user completes the fields he wants."
+	},	{
+		"sentence": "He can fill in fields like: group where the entry will be added, title, user name, password, repeat password, URL, notes, expiration date and attachment file."
+	},	{
+		"sentence": "Not all fields are required for an entry to be created."
+	},	{
+		"sentence": "In fact an entry can be added with no fields at all."
+	},	{
+		"sentence": "By selecting OK the entry is created in the group selected.",
+		"causality": {
+			"cause": "selecting OK",
+			"effect": "the entry is created in the group selected"
+		}
+	},	{
+		"sentence": "An entry must belong to a group to be created."
+	},	{
+		"sentence": "When the password field is completed the repeat password field must be completed.",
+		"causality": {
+			"cause": "the password field is completed",
+			"effect": "the repeat password field must be completed"
+		}
+	},	{
+		"sentence": "Password field and repeat password field must be identical."
+	},	{
+		"sentence": "This feature allows the user to change or modify an existing entry."
+	},	{
+		"sentence": "The user can modify the context of an entry he already has added."
+	},	{
+		"sentence": "This can be done by selecting view/edit entry."
+	},	{
+		"sentence": "In order for that to happen, the user must select an entry first."
+	},	{
+		"sentence": "When he does this, the form he filled in when he created or last modified the entry open.",
+		"causality": {
+			"cause": "he does this",
+			"effect": "the form he filled in when he created or last modified the entry open"
+		}
+	},	{
+		"sentence": "Then the user can change the group, title, user name, password, URL, notes, expiration date and attachment file."
+	},	{
+		"sentence": "His changes are saved by clicking OK."
+	},	{
+		"sentence": "Data Flow."
+	},	{
+		"sentence": "An entry must be selected to be viewed or modified."
+	},	{
+		"sentence": "When the password field is changed the repeat password field must be changed and be identical with password field.",
+		"causality": {
+			"cause": "the password field is changed",
+			"effect": "the repeat password field must be changed and be identical with password field"
+		}
+	},	{
+		"sentence": "This feature creates an exact copy of the selected entry in the same group."
+	},	{
+		"sentence": "The user can create an exact copy of an entry."
+	},	{
+		"sentence": "This can be done by selecting an entry and clicking duplicate entry."
+	},	{
+		"sentence": "When this is done the new entry is added in the same group were the first was.",
+		"causality": {
+			"cause": "this is done",
+			"effect": "the new entry is added in the same group were the first was"
+		}
+	},	{
+		"sentence": "An entry must be selected before it is duplicated."
+	},	{
+		"sentence": "This feature allows the user to delete an existing entry."
+	},	{
+		"sentence": "The user can delete an existing entry by selecting it and then by clicking delete entry.",
+		"causality": {
+			"cause": "selecting it and then by clicking delete entry",
+			"effect": "The user can delete an existing entry"
+		}
+	},	{
+		"sentence": "When this is done a message appears and informs the user that if he deletes the entry he won't be able to restore it back.",
+		"causality": {
+			"cause": "this is done",
+			"effect": "a message appears and informs the user that if he deletes the entry he won't be able to restore it back"
+		}
+	},	{
+		"sentence": "An entry must be selected to be deleted."
+	},	{
+		"sentence": "This feature allows user to choose one of the language translations that are available in KeePass."
+	},	{
+		"sentence": "The user can select between a number of translations that are available at KeePass website."
+	},	{
+		"sentence": "There are available translations in Arabic, Brazilian, Bulgarian, Catalan, Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hungarian, Italian, Japanese, Korean, Lithuanian, Macedonian, Malay, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Spanish, Swedish, Turkish and Ukrainian."
+	},	{
+		"sentence": "All the user has to do is to select change language from the view menu and then the language he wants."
+	},	{
+		"sentence": "If he already has download languages packets he can choose one of them.",
+		"causality": {
+			"cause": "he already has download languages packets",
+			"effect": "he can choose one of them"
+		}
+	},	{
+		"sentence": "If he wants another language pack he can select get more language.",
+		"causality": {
+			"cause": "he wants another language pack",
+			"effect": "he can select get more language"
+		}
+	},	{
+		"sentence": "Doing this he will be transferred at KeePass website and choose the language he wants for downloading."
+	},	{
+		"sentence": "User opens KeePass and selects to change language from the view menu 2."
+	},	{
+		"sentence": "The user selects a language to load from the list that appears 3."
+	},	{
+		"sentence": "A message appears that informs user that the installation has been done and in order for the changes to take place KeePass must be restarted 4."
+	},	{
+		"sentence": "User selects yes (restart now) 5."
+	},	{
+		"sentence": "KeePass asks to save any changes that may have been made in the database and restarts 6."
+	},	{
+		"sentence": "User unlocks the database using the Master Password 7."
+	},	{
+		"sentence": "The database appears translated in the new language."
+	},	{
+		"sentence": "An internet connection and a browser are required in order to download new language translations for the following features, use cases are not included.",
+		"causality": {
+			"cause": "internet connection and a browser are required",
+			"effect": "download new language translations for the following features, use cases are not included"
+		}
+	},	{
+		"sentence": "This feature allows user to define a sequence of keypresses which KeePass will automatically perform."
+	},	{
+		"sentence": "The prefix Auto-Type is required in front of each sequence."
+	},	{
+		"sentence": "Sequence's length must not be more than a line (59 characters)."
+	},	{
+		"sentence": "If two auto-types are referred in one note field, only the first is used.",
+		"causality": {
+			"cause": "two auto-types are referred in one note field",
+			"effect": "only the first is used"
+		}
+	},	{
+		"sentence": "This feature allows user to pass a file patch in the command line so that KeePass will open it immediately after start up."
+	},	{
+		"sentence": "The database file location is passed as argument in the command line."
+	},	{
+		"sentence": "More about this feature and examples for using it can be found at help contents in KeePass."
+	},	{
+		"sentence": "Only one database file is allowed in command line options."
+	},	{
+		"sentence": "In case a space is found in the path, it must be enclosed into quotes.",
+		"causality": {
+			"cause": "a space is found in the path",
+			"effect": "it must be enclosed into quotes"
+		}
+	},	{
+		"sentence": "This feature is a composition of master password and key files and all its composites are required so that the database can be unlocked."
+	},	{
+		"sentence": "The database can be unlocked with a master password, a key file or both of them."
+	},	{
+		"sentence": "But the same composition of them must be used always."
+	},	{
+		"sentence": "A master key is a password the user creates."
+	},	{
+		"sentence": "Once a master key is created for a database, it is always required.",
+		"causality": {
+			"cause": "a master key is created for a database",
+			"effect": "it is always required"
+		}
+	},	{
+		"sentence": "In case the user forgets it, the database can never be opened again by any way.",
+		"causality": {
+			"cause": "the user forgets it",
+			"effect": "the database can never be opened again by any way"
+		}
+	},	{
+		"sentence": "A key file is a file that locks the database."
+	},	{
+		"sentence": "The database opens when this file is present."
+	},	{
+		"sentence": "If the file is lost and there are no copies of it, all data are gone forever and database never unlocks again.",
+		"causality": {
+			"cause": "the file is lost and there are no copies of it",
+			"effect": "all data are gone forever and database never unlocks again"
+		}
+	},	{
+		"sentence": "If a master password is required to unlock the database, the database doesn't open unless the password is entered.",
+		"causality": {
+			"cause": "a master password is required to unlock the database",
+			"effect": "the database doesn't open unless the password is entered"
+		}
+	},	{
+		"sentence": "If a key file is required to unlock the database, the database doesn't open unless the key file is present.",
+		"causality": {
+			"cause": "a key file is required to unlock the database",
+			"effect": "the database doesn't open unless the key file is present"
+		}
+	},	{
+		"sentence": "If there is a composite key, both master password and key file are required.",
+		"causality": {
+			"cause": "there is a composite key",
+			"effect": "both master password and key file are required"
+		}
+	},	{
+		"sentence": "In case of lost master password or key file, the database never unlocks again.",
+		"causality": {
+			"cause": "lost master password or key file",
+			"effect": "the database never unlocks again"
+		}
+	},	{
+		"sentence": "There is no recovery."
+	},	{
+		"sentence": "There is no backdoor or key that unlocks all databases."
+	},	{
+		"sentence": "This feature gives the ability to user to import/export files from/to database."
+	},	{
+		"sentence": "There is the ability to import data from CSV files, code wallet, password safe and password vault."
+	},	{
+		"sentence": "There are available plug-ins which add more import capabilities and formats and those are: File format CSV and File format XML."
+	},	{
+		"sentence": "There isn't any standard password database format and every password manager uses its own file format."
+	},	{
+		"sentence": "Despite that, almost all support exporting to CSV or XML files."
+	},	{
+		"sentence": "File formats are not specialized password database formats."
+	},	{
+		"sentence": "File formats only specify a low-level layout of stored data."
+	},	{
+		"sentence": "This feature allows switching back from an application to KeePass."
+	},	{
+		"sentence": "The global hot key takes the user back from one window to KeePass."
+	},	{
+		"sentence": "In case of multiple databases running of KeePass the global hot key restores the window which was opened first of all.",
+		"causality": {
+			"cause": "multiple databases running of KeePass",
+			"effect": "the global hot key restores the window which was opened first of all"
+		}
+	},	{
+		"sentence": "The global hot key is Ctrl+Alt+K."
+	},	{
+		"sentence": "Global hot key cannot be changed."
+	},	{
+		"sentence": "This feature generates random passwords."
+	},	{
+		"sentence": "The password generator creates random passwords every time an entry is created."
+	},	{
+		"sentence": "This password may contain letters (big and small) and numbers."
+	},	{
+		"sentence": "The user can keep it or he can put his own in the field."
+	},	{
+		"sentence": "The generation can be based on character sets, patterns or can be created according by rules."
+	},	{
+		"sentence": "This feature can be disabled if user wants it by selecting 0 as password length in the password generator dialog.",
+		"causality": {
+			"cause": "user wants it by selecting 0 as password length in the password generator dialog",
+			"effect": "This feature can be disabled"
+		}
+	},	{
+		"sentence": "More about characters sets and patterns can be found at KeePass Help Files including directions and examples."
+	},	{
+		"sentence": "According to restriction rules that are applied every time."
+	},	{
+		"sentence": "This feature allows creation of Transaction Authentication Numbers."
+	},	{
+		"sentence": "TANs can be passwords that provide security because they can never be used for more than once time."
+	},	{
+		"sentence": "They can be added to user's database by using TAN wizard and can contain all letters and numbers."
+	},	{
+		"sentence": "When TAN are created, they appear as typical entries which in the field title contain TAN so that KeePass will know it's a TAN.",
+		"causality": {
+			"cause": "TAN are created",
+			"effect": "they appear as typical entries which in the field title contain TAN so that KeePass will know it's a TAN"
+		}
+	},	{
+		"sentence": "In TAN entries, user cannot change the title, user name or URL but notes can be added."
+	},	{
+		"sentence": "When a TAN is used, its expiration time is set to that current time and the entry expires automatically.",
+		"causality": {
+			"cause": "a TAN is used",
+			"effect": "its expiration time is set to that current time and the entry expires automatically"
+		}
+	},	{
+		"sentence": "Title, username or URL cannot be changed in a TAN entry."
+	},	{
+		"sentence": "When a TAN is used, it expires automatically and can never be used again.",
+		"causality": {
+			"cause": "a TAN is used",
+			"effect": "it expires automatically and can never be used again"
+		}
+	},	{
+		"sentence": "User interface includes various forms and windows."
+	},	{
+		"sentence": "The main database window consists of the main menu bar with file, edit, view, tools and help."
+	},	{
+		"sentence": "Under main menu there is a toolbar with shortcuts to most used functions of KeePass."
+	},	{
+		"sentence": "Those are: new, open, save, add entry, edit/view entry, delete entry, copy username to clipboard, copy password to clipboard, find in database and lock workspace."
+	},	{
+		"sentence": "On the main database window are appeared entries from a selected group."
+	},	{
+		"sentence": "Groups and subgroups can be found at a side bar."
+	},	{
+		"sentence": "When a function is performed like adding, editing or deleting, the active window is the one performing the action.",
+		"causality": {
+			"cause": "a function is performed like adding, editing or deleting",
+			"effect": "the active window is the one performing the action"
+		}
+	},	{
+		"sentence": "At this time the main database window is inactive and cannot be accessed unless the current active window is closed."
+	},	{
+		"sentence": "KeePass as referred previously uses NET/Mono and Win32 (MS Windows) interfaces."
+	},	{
+		"sentence": "When a password is copied, it remains on memory for only 10 seconds.",
+		"causality": {
+			"cause": "a password is copied",
+			"effect": "it remains on memory for only 10 seconds"
+		}
+	},	{
+		"sentence": "If in the meanwhile it is not pasted anywhere, it must be copied again.",
+		"causality": {
+			"cause": "in the meanwhile it is not pasted anywhere",
+			"effect": "it must be copied again"
+		}
+	},	{
+		"sentence": "That happens so that if user copies a password and not paste it anywhere, the password cannot be found by anyone later.",
+		"causality": {
+			"cause": "user copies a password and not paste it anywhere",
+			"effect": "the password cannot be found by anyone later"
+		}
+	},	{
+		"sentence": "When a USB which contains the database is removed from a computer while changes haven't been completely saved, the database is damaged and cannot be opened.",
+		"causality": {
+			"cause": "a USB which contains the database is removed from a computer while changes haven't been completely saved",
+			"effect": "the database is damaged and cannot be opened"
+		}
+	},	{
+		"sentence": "In this case the repair functionality can help by repairing KeePass database file from tools menu."
+	},	{
+		"sentence": "In case the user forgets or loses the Master Password, the repair functionality won't help.",
+		"causality": {
+			"cause": "the user forgets or loses the Master Password",
+			"effect": "the repair functionality won't help"
+		}
+	},	{
+		"sentence": "In case the header of the database, which is the first few bytes, is corrupted, again the repair functionality won't help.",
+		"causality": {
+			"cause": "the header of the database, which is the first few bytes, is corrupted",
+			"effect": "the repair functionality won't help"
+		}
+	},	{
+		"sentence": "To avoid this kind of situations, backups can be done regularly."
+	}
+]
