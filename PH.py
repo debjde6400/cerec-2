@@ -1,2 +1,0 @@
-def printHam():
-     print("Ham")
